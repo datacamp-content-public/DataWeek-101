@@ -50,6 +50,10 @@ Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` 
 `@sample_code`
 
 ```{python}
+x = 5                         # integers - this is a comment and starts with `#`
+y = True                      # booleans
+z = "Learning python"         # strings
+
 a = 5 + 6
 b = 7 / 2
 c = a * 2
@@ -69,6 +73,10 @@ print()
 `@solution`
 
 ```{python}
+x = 5                         # integers - this is a comment and starts with `#`
+y = True                      # booleans
+z = "Learning python"         # strings
+
 a = 5 + 6
 b = 7 / 2
 c = a + 1
