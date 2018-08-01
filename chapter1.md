@@ -23,9 +23,14 @@ z = "Learning python"         # strings
 Python supports by default simple operations:
 ```
 a = 5 + 6
-b = 7
-c = a + 7
-d = c - 2
+b = 7 / 2
+c = a + 1
+d = c - 1
+```
+We can print to screen using `print()`:
+```
+print(a)
+print(b,c,d)
 ```
 
 
