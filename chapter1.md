@@ -16,9 +16,9 @@ We learn to define variables and print to screen in Python.
 
 This is a variable assignment:
 ```
-x = 5         # integers
-y = True     # booleans
-z = "Learning python" # strings
+x = 5                         # integers
+y = True                     # booleans
+z = "Learning python"     # strings
 ```
 
 
