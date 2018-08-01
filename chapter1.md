@@ -58,7 +58,7 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Change the value of be to 7.0 / 2
+# Change the value of b to 7.0 / 2 and print it to screen
 
 b = 
 ```
@@ -74,7 +74,7 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Change the value of b to 7.0 / 2
+# Change the value of b to 7.0 / 2 and print it to screen
 
 b = 7.0 / 2
 print(b)
