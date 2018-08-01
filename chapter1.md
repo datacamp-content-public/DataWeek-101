@@ -30,24 +30,12 @@ d = c - 1
 We can print to screen using `print()`:
 ```
 print(a)
-print(b,c,d)
+print(b, c, d)
 ```
 
 
 `@instructions`
-Let's set the variables `x` and `y` to some number
-
-`x = 5`
-
-`y = 6`
-
-let's sum them and store the result in `z`
-
-`z = x + y`
-
-and print `z` to screen
-
-`print(z)`
+Complete the code on the right.
 
 `@hint`
 
@@ -62,25 +50,40 @@ and print `z` to screen
 `@sample_code`
 
 ```{python}
-x = 5
-y = 6
-z = x + y
-print(z)
+a = 5 + 6
+b = 7 / 2
+c = a + 1
+d = c - 1 
+
+print(a)
+print(b, c, d)
+
+# Change the value of be to 7.0 / 2
+
+b = 
 ```
 
 `@solution`
 
 ```{python}
-x = 5
-y = 6
-z = x + y
-print(z)
+a = 5 + 6
+b = 7 / 2
+c = a + 1
+d = c - 1 
+
+print(a)
+print(b, c, d)
+
+# Change the value of b to 7.0 / 2
+
+b = 7.0 / 2
+print(b)
 ```
 
 `@sct`
 
 ```{python}
-1
+Ex().check_object(b).has_equal_value()
 ```
 
 ---
