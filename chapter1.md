@@ -52,13 +52,14 @@ print(z)
 `@solution`
 
 ```{python}
-
+x = 5
+y = 6
+z = x + y
+print(z)
 ```
-
 
 `@sct`
 
 ```{python}
-
+1
 ```
-
