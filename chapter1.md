@@ -63,3 +63,48 @@ print(z)
 ```{python}
 1
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 54ea0f3a94   
+```
+
+
+Test
+
+
+`@instructions`
+Test
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+a = 7
+```
+
+`@solution`
+
+```{python}
+a = 7
+```
+
+`@sct`
+
+```{python}
+1
+```
