@@ -82,24 +82,13 @@ Let's start printing to the console.
 `@instructions`
 print("Hello World")
 
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
 # to print Hello World
 print("Hello World")
 
-# now print your name
-
+# now print your name (e.g. Hello John)
 ```
 
 `@solution`
@@ -111,7 +100,7 @@ print("Giorgio")
 `@sct`
 
 ```{python}
-Ex().has_code(r'print("Hello')
+Ex().has_output(r'')
 ```
 
 ---
@@ -125,103 +114,19 @@ key: 83d1ec5467
 ```
 
 
-
+We will learn how to set up variables and print in Python.
 
 
 `@pre_exercise_code`
 
 ```{python}
-
+x = 5
+y = 1
+z = x + y
 ```
-
 
 `@sample_code`
 
 ```{python}
-
+print(z)
 ```
-
-
-***
-
-
-
-```yaml
-type: NormalExercise 
-xp: 50 
-key: ed7c526604   
-```
-
-
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@sample_code`
-
-```{python}
-
-```
-
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
-
-***
-
-
-
-```yaml
-type: NormalExercise 
-xp: 50 
-key: 11b31d33ca   
-```
-
-
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@sample_code`
-
-```{python}
-
-```
-
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
