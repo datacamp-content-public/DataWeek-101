@@ -16,7 +16,7 @@ We learn to define variables and print to screen in Python.
 
 This is a variable assignment:
 ```
-x = 5                         # integers - this is a comment and starts with the `#` symbol
+x = 5                         # integers - this is a comment and starts with `#`
 y = True                      # booleans
 z = "Learning python"         # strings
 ```
