@@ -83,7 +83,7 @@ print(b)
 `@sct`
 
 ```{python}
-Ex().check_object(b).has_equal_value()
+Ex().check_object('b').has_equal_value()
 ```
 
 ---
