@@ -80,7 +80,7 @@ Let's start printing to the console.
 
 
 `@instructions`
-
+print("Hello World")
 
 `@hint`
 
@@ -88,8 +88,9 @@ Let's start printing to the console.
 `@pre_exercise_code`
 
 ```{python}
-print("Hello World")
+
 ```
+
 
 `@sample_code`
 
