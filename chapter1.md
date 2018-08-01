@@ -35,7 +35,7 @@ print(b, c, d)
 
 
 `@instructions`
-Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` and their sum to `z`. What do you expect to be the output?  Finally, print `z` to screen.
+Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
 
 `@hint`
 
@@ -52,13 +52,13 @@ Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` 
 ```{python}
 a = 5 + 6
 b = 7 / 2
-c = a + 1
+c = a * 2
 d = c - 1 
 
 print(a)
 print(b, c, d)
 
-# Assign "We are" to x, 5 to y and their sum to z. Print z to screen
+# Assign "We are" to x, 5 to y and their product to z. Print z to screen
 
 x = 
 y = 
@@ -77,11 +77,11 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Change the value of b to 7.0 / 2 and print it to screen
+# 
 
-x = "We are"
+x = "Hello"
 y = 5
-z = x + y
+z = x * y
 print(z)
 ```
 
