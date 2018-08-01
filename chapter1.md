@@ -130,3 +130,48 @@ z = x + y
 ```{python}
 print(z)
 ```
+
+***
+
+
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 8e68fb350c   
+```
+
+
+
+
+
+`@instructions`
+Define two variables a and b and assign the values 6 and 7.
+Assign the sum to c and print its value.
+
+`@hint`
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+a = 6
+b = 7
+c = a + b
+print(c)
+```
+
+`@sct`
+
+```{python}
+
+```
+
+
