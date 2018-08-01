@@ -15,7 +15,9 @@ key: bda4ea2742
 We learn to define variables and print to screen in Python.
 
 This is a variable assignment:
-> _` x = 5 `_
+```
+ x = 5
+```
 
 
 `@instructions`
