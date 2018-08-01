@@ -3,73 +3,53 @@
   description: "Test"
 ---
 
-## Your first python script
+## Variables
 
 ```yaml
-type: TabExercise 
+type: NormalExercise 
 xp: 100 
-key: 83d1ec5467   
+key: bda4ea2742   
 ```
 
 
-We will learn how to set up variables and print in Python.
+We learn to define variables and print to screen in Python.
+
+
+`@instructions`
+`x = 5
+y = 6
+z = x + y
+print(z)`
+
+`@hint`
 
 
 `@pre_exercise_code`
 
 ```{python}
-x = 5
-y = 1
-z = x + y
+
 ```
-
-`@sample_code`
-
-```{python}
-print(z)
-```
-
-***
-
-
-
-```yaml
-type: NormalExercise 
-xp: 100 
-key: 8e68fb350c   
-```
-
-
-
-
-
-`@instructions`
-Define two variables a and b and assign the values 6 and 7.
-Assign the sum to c and print its value.
-
-`@hint`
 
 
 `@sample_code`
 
 ```{python}
-
+x =
+y =
+z =
+print()
 ```
-
 
 `@solution`
 
 ```{python}
-a = 6
-b = 7
-c = a + b
-print(c)
+
 ```
+
 
 `@sct`
 
 ```{python}
 
 ```
-
 
