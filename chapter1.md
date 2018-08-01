@@ -1,21 +1,22 @@
 ---
-title: Test
-description: Test
-
+  title: "Test"
+  description: "Test"
 ---
 
 ## An exercise title written in sentence case
 
 ```yaml
-type: NormalExercise
+type: NormalExercise 
 lang: python
-xp: 100
+xp: 100 
 skills: 2
-key: f8a55cf115
+key: 245f3de3cd   
 ```
+
 
 This is the assignment text. It should help provide students with the background information needed.
 The instructions that follow should be in bullet point form with clear guidance for what is expected.
+
 
 `@instructions`
 - Instruction 1
@@ -62,4 +63,49 @@ The instructions that follow should be in bullet point form with clear guidance 
 ```{python}
 # Update this to something more informative.
 success_msg("Some praise! Then reinforce a learning objective from the exercise.")
+```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 2bd734d190   
+```
+
+
+Let's start printing to the console.
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+print("Hello World")
+```
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+print("Hello Giorgio")
+```
+
+`@sct`
+
+```{python}
+Ex().has_code(r"print(\"Hello")
 ```
