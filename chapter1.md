@@ -17,8 +17,12 @@ We learn to define variables and print to screen in Python.
 
 `@instructions`
 Let's set the variables `x` and `y` to some number
+
 `x = 5`
+
 `y = 6`
+
+
 let's sum them and store the result in `z`
 `z = x + y`
 and print `z` to screen
