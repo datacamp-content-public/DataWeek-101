@@ -16,7 +16,7 @@ We learn to define variables and print to screen in Python.
 
 This is a variable assignment:
 ```
-x = 5                         # integers
+x = 5                         # integers - this is a comment and starts with the `#` symbol
 y = True                      # booleans
 z = "Learning python"         # strings
 ```
@@ -35,7 +35,7 @@ print(b, c, d)
 
 
 `@instructions`
-Complete the code on the right.
+Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` and their sum to `z`. What do you expect to be the output?  Finally, print `z` to screen.
 
 `@hint`
 
@@ -58,9 +58,12 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Change the value of b to 7.0 / 2 and print it to screen
+# Assign "We are" to x, 5 to y and their sum to z. Print z to screen
 
-b = 
+x = 
+y = 
+z =  + 
+print()
 ```
 
 `@solution`
@@ -76,14 +79,16 @@ print(b, c, d)
 
 # Change the value of b to 7.0 / 2 and print it to screen
 
-b = 7.0 / 2
-print(b)
+x = "We are"
+y = 5
+z = x + y
+print(z)
 ```
 
 `@sct`
 
 ```{python}
-Ex().check_object('b').has_equal_value()
+Ex().check_object('z').has_equal_value()
 ```
 
 ---
