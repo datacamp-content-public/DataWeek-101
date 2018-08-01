@@ -105,7 +105,7 @@ Ex().has_output(r'')
 
 ---
 
-## Insert exercise title here
+## Your first python script
 
 ```yaml
 type: TabExercise 
