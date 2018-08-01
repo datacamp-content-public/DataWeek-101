@@ -105,7 +105,7 @@ print("Hello World")
 `@solution`
 
 ```{python}
-print("Hello Giorgio")
+print("Giorgio")
 ```
 
 `@sct`
@@ -113,3 +113,115 @@ print("Hello Giorgio")
 ```{python}
 Ex().has_code(r'print("Hello')
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: TabExercise 
+xp: 100 
+key: 83d1ec5467   
+```
+
+
+
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+***
+
+
+
+```yaml
+type: NormalExercise 
+xp: 50 
+key: ed7c526604   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+
+***
+
+
+
+```yaml
+type: NormalExercise 
+xp: 50 
+key: 11b31d33ca   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
