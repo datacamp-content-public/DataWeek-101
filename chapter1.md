@@ -18,7 +18,7 @@ This is a variable assignment:
 ```
 x = 5                         # integers
 y = True                      # booleans
-z = "Learning python"        # strings
+z = "Learning python"         # strings
 ```
 
 
