@@ -95,9 +95,12 @@ print("Hello World")
 `@sample_code`
 
 ```{python}
+# to print Hello World
+print("Hello World")
+
+# now print your name
 
 ```
-
 
 `@solution`
 
@@ -108,5 +111,5 @@ print("Hello Giorgio")
 `@sct`
 
 ```{python}
-Ex().has_code(r"print(\"Hello")
+Ex().has_code(r'print("Hello')
 ```
