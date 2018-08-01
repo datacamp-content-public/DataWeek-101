@@ -20,6 +20,13 @@ x = 5                         # integers
 y = True                      # booleans
 z = "Learning python"         # strings
 ```
+Python supports by default simple operations:
+```
+a = 5 + 6
+b = 7
+c = a + 7
+d = c - 2
+```
 
 
 `@instructions`
