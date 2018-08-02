@@ -186,7 +186,8 @@ b['name'] = 'Mary'
 `@sct`
 
 ```{python}
-Ex().
+Ex().check_object('a').has_equal_value()
+Ex().check_object('b').has_equal_value()
 ```
 
 ---
