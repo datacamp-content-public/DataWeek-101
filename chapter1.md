@@ -216,7 +216,7 @@ else:
 Note that 
 
 - a colon is needed at the end of the `if(condition)` line
-- the special operator `+=` (`b +=1` is the same as writing `b = b +1`)
+- the special operator `+=` (`b += 1` is the same as writing `b = b + 1`)
 
 
 `@instructions`
