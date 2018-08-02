@@ -216,3 +216,63 @@ print('b is now ', b)
 ```
 
 
+
+---
+
+## Collections
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: e3b431cc13   
+```
+
+
+There are four collection data types in the Python programming language:
+
+1. **List** is a collection which is ordered and changeable. Allows duplicate members.
+2. **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
+3. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
+4. **Set** is a collection which is unordered and unindexed. No duplicate members.
+
+|Collection|Ordered|Changeable|Allows Duplicates|
+|------------------------------------------------------|
+|List|Yes|Yes|Yes|
+|Dictionary|No|Yes|No|
+|Tuple|Yes|No|Yes|
+|Set|No|Yes|No|
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
