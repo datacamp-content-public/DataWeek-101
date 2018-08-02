@@ -45,13 +45,6 @@ Complete the code on the right. Assign the value "Hello" to `x` and `5` to `y` a
 `y = `
 `z = x *`
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -110,29 +103,18 @@ Ex().check_object('z').has_equal_value()
 ## Collections
 
 ```yaml
-type: NormalExercise 
+type: TabExercise 
 xp: 100 
-key: 54ea0f3a94   
+key: 24f012063e   
 ```
 
 
 There are four collection data types in the Python programming language:
 
-- **List** is a collection which is ordered and changeable. Allows duplicate members.
-```
-x = [0, 1, 2]
-y = ['this', 'is', 'a', 'list']
-z = [0, 1, 'list']
-```
-- **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
-- **Set** is a collection which is unordered and unindexed. No duplicate members.
-- **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
-
-
-`@instructions`
-Test
-
-`@hint`
+1. **List** is a collection which is ordered and changeable. Allows duplicate members.
+2. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
+3. **Set** is a collection which is unordered and unindexed. No duplicate members.
+4. **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
 
 
 `@pre_exercise_code`
@@ -145,17 +127,53 @@ Test
 `@sample_code`
 
 ```{python}
-a = 7
+# a list
+a = [0,1,2,3]
+
+# a dictionary
+b = {'name': 'John',
+     'surname': 'Smith',
+     'age': 42 }
 ```
+
+***
+
+
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: e4564e1437   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@sample_code`
+
+```{python}
+
+```
+
 
 `@solution`
 
 ```{python}
-a = 7
+
 ```
+
 
 `@sct`
 
 ```{python}
-1
+
 ```
+
+
