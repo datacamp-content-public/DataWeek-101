@@ -103,125 +103,6 @@ Ex().check_object('z').has_equal_value()
 ## Collections
 
 ```yaml
-type: TabExercise 
-xp: 100 
-key: 24f012063e   
-```
-
-
-There are four collection data types in the Python programming language:
-
-1. **List** is a collection which is ordered and changeable. Allows duplicate members.
-2. **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
-3. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
-4. **Set** is a collection which is unordered and unindexed. No duplicate members.
-
-|Collection|Ordered|Changeable|Allows Duplicates|
-|------------------------------------------------------|
-|List|Yes|Yes|Yes|
-|Dictionary|No|Yes|No|
-|Tuple|Yes|No|Yes|
-|Set|No|Yes|No|
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
-`@sample_code`
-
-```{python}
-# a list
-a = [0, 1, 2, 3]
-print('a starts as ', a)
-
-# changing an element
-a[0] = 2
-a[2] = 4
-
-print('a is now ', a)
-
-# a dictionary
-b = {'name': 'John',
-     'surname': 'Smith',
-     'age': 42 }
-print('b starts as ', b)
-
-b['name'] = 'Paul'
-print('b is now ', b)
-
-# a tuple
-c = (1, 2)
-# a set
-d = {1, 2, 3}
-```
-
-***
-
-
-
-```yaml
-type: NormalExercise 
-xp: 100 
-key: e4564e1437   
-```
-
-
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@sample_code`
-
-```{python}
-# a list
-a = [0, 1, 2, 3]
-print('a starts as ', a)
-
-# changing an element
-a[0] = 2
-a[2] = 4
-
-print('a is now ', a)
-
-# a dictionary
-b = {'name': 'John',
-     'surname': 'Smith',
-     'age': 42 }
-print('b starts as ', b)
-
-b['name'] = 'Paul'
-print('b is now ', b)
-```
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
-
----
-
-## Collections
-
-```yaml
 type: NormalExercise 
 xp: 100 
 key: e3b431cc13   
@@ -271,8 +152,7 @@ print('a is now ', a)
 
 # a dictionary
 b = {'name': 'John',
-     'surname': 'Smith',
-     'age': 42 }
+     'surname': 'Smith'}
 print('b starts as ', b)
 
 b['name'] = 'Paul'
@@ -299,8 +179,7 @@ print('a is now ', a)
 
 # a dictionary
 b = {'name': 'John',
-     'surname': 'Smith',
-     'age': 42 }
+     'surname': 'Smith'}
 print('b starts as ', b)
 
 b['name'] = 'Paul'
