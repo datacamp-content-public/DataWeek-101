@@ -16,9 +16,12 @@ We learn to define variables and print to screen in Python.
 
 This is a variable assignment:
 ```
-x = 5                         # integers - this is a comment and starts with `#`
+x = 5                         # integers - this is a comment
 y = True                      # booleans
 z = "Learning python"         # strings
+
+# comments start with  `#`
+
 ```
 Python supports by default simple operations:
 ```
