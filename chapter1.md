@@ -223,7 +223,7 @@ Note that
 Change the value of `a` so that the `else` clause is evaluated.
 
 `@hint`
-
+`a` needs to be less than (or equal to) 0
 
 `@pre_exercise_code`
 
