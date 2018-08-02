@@ -197,54 +197,6 @@ Ex().check_object('b').has_equal_value()
 ```yaml
 type: NormalExercise 
 xp: 100 
-key: 4b8f6f6363   
-```
-
-
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
-`@sample_code`
-
-```{python}
-
-```
-
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
----
-
-## Loops
-
-```yaml
-type: NormalExercise 
-xp: 100 
 key: f7a970dee6   
 ```
 
@@ -306,5 +258,5 @@ print(b)
 `@sct`
 
 ```{python}
-Ex().check_object("b").check_value_equals()
+Ex().check_object("b").has_equal_value()
 ```
