@@ -142,21 +142,22 @@ Run the code and examine the output.
 ```{python}
 # a list
 a = [0, 1, 2, 3]
-print('a starts as ', a)
 
 # changing an element
 a[0] = 2
 a[2] = 4
 
-print('a is now ', a)
-
 # a dictionary
 b = {'name': 'John',
      'surname': 'Smith'}
-print('b starts as ', b)
 
 b['name'] = 'Paul'
-print('b is now ', b)
+
+# Change the first element of a to 7
+a
+
+# Change the 'name' key in b to Mary
+b
 ```
 
 `@solution`
@@ -164,25 +165,88 @@ print('b is now ', b)
 ```{python}
 # a list
 a = [0, 1, 2, 3]
-print('a starts as ', a)
 
 # changing an element
 a[0] = 2
 a[2] = 4
 
-print('a is now ', a)
-
 # a dictionary
 b = {'name': 'John',
      'surname': 'Smith'}
-print('b starts as ', b)
 
 b['name'] = 'Paul'
-print('b is now ', b)
+
+# Change the first element of a to 7
+a[0] = 7
+
+# Change the 'name' key in b to Mary
+b['name'] = 'Mary'
 ```
 
 `@sct`
 
 ```{python}
-1
+Ex().
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: b5390d8eac   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+a = [0, 1, 2, 3]
+b = {'name': 'John',
+     'surname': 'Smith'}
+
+# a tuple
+c = (1, 2)
+# a set
+d = {1, 2, 3}
+
+# Change the first element of a to 7
+a
+
+# Change the 'name' key in b to Mary
+b
+
+
+```
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
