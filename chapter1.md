@@ -35,10 +35,12 @@ print(b, c, d)
 
 
 `@instructions`
-Complete the code on the right. Assign the value "We are" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
+Complete the code on the right. Assign the value "Hello" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
 
 `@hint`
-
+`x = "some words"`
+`y = `
+`z = x *`
 
 `@pre_exercise_code`
 
@@ -62,7 +64,7 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Assign "We are" to x, 5 to y and their product to z. Print z to screen
+# Assign "Hello" to x, 5 to y and their product to z. Print z to screen.
 
 x = 
 y = 
@@ -85,7 +87,7 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# 
+# Assign "Hello" to x, 5 to y and their product to z. Print z to screen.
 
 x = "Hello"
 y = 5
@@ -115,16 +117,6 @@ Test
 
 `@instructions`
 Test
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
