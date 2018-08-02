@@ -182,9 +182,25 @@ key: e4564e1437
 `@sample_code`
 
 ```{python}
+# a list
+a = [0, 1, 2, 3]
+print('a starts as ', a)
 
+# changing an element
+a[0] = 2
+a[2] = 4
+
+print('a is now ', a)
+
+# a dictionary
+b = {'name': 'John',
+     'surname': 'Smith',
+     'age': 42 }
+print('b starts as ', b)
+
+b['name'] = 'Paul'
+print('b is now ', b)
 ```
-
 
 `@solution`
 
