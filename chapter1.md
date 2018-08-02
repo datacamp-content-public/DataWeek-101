@@ -189,3 +189,109 @@ b['name'] = 'Mary'
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
 ```
+
+---
+
+## If-then-else
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 4b8f6f6363   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
+## Loops
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: f7a970dee6   
+```
+
+
+If-then-else blocks are used in Python to perform different ... depending on which condition is met.
+```
+a = 1
+b = 2
+
+if (a > 0):
+        b += 1
+else:
+        b += 10
+
+```
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
