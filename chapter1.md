@@ -112,9 +112,9 @@ key: 24f012063e
 There are four collection data types in the Python programming language:
 
 1. **List** is a collection which is ordered and changeable. Allows duplicate members.
-2. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
-3. **Set** is a collection which is unordered and unindexed. No duplicate members.
-4. **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
+2. **Dictionary** is a collection which is unordered, changeable and indexed. No duplicate members.
+3. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
+4. **Set** is a collection which is unordered and unindexed. No duplicate members.
 
 
 `@pre_exercise_code`
@@ -128,12 +128,18 @@ There are four collection data types in the Python programming language:
 
 ```{python}
 # a list
-a = [0,1,2,3]
+a = [0, 1, 2, 3]
 
 # a dictionary
 b = {'name': 'John',
      'surname': 'Smith',
      'age': 42 }
+
+# a tuple
+c = (1, 2)
+
+# a set
+d = {1, 2, 3}
 ```
 
 ***
