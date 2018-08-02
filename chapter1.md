@@ -263,7 +263,7 @@ else:
 
 
 `@instructions`
-
+Change the value of `a` so that the `else` clause is evaluated.
 
 `@hint`
 
@@ -278,20 +278,33 @@ else:
 `@sample_code`
 
 ```{python}
+a = 1
+b = 2
 
+if (a > 0):
+        b += 1
+else:
+        b += 10
+
+print(b)
 ```
-
 
 `@solution`
 
 ```{python}
+a = 0
+b = 2
 
+if (a > 0):
+        b += 1
+else:
+        b += 10
+
+print(b)
 ```
-
 
 `@sct`
 
 ```{python}
-
+Ex().check_object("b").check_value_equals()
 ```
-
