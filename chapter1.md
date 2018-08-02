@@ -157,11 +157,6 @@ print('b starts as ', b)
 
 b['name'] = 'Paul'
 print('b is now ', b)
-
-# a tuple
-c = (1, 2)
-# a set
-d = {1, 2, 3}
 ```
 
 `@solution`
