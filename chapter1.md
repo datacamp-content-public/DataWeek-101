@@ -68,7 +68,7 @@ print(b, c, d)
 
 x = 
 y = 
-z =  + 
+z =  * 
 print()
 ```
 
@@ -99,6 +99,7 @@ print(z)
 
 ```{python}
 Ex().check_object('z').has_equal_value()
+#Ex().check_printout()
 ```
 
 ---
