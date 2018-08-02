@@ -265,3 +265,51 @@ print(b)
 ```{python}
 Ex().check_object("b").has_equal_value()
 ```
+
+---
+
+## Loops
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 935f6f9948   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
