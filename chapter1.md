@@ -277,40 +277,6 @@ key: a4c9d49a0a
 
 
 
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
-`@sample_code`
-
-```{python}
-
-```
-
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
 ---
 
 ## A simple script
@@ -331,13 +297,6 @@ Just try to guess what the script does. Once you're done, press "Run" and see wh
 `@hint`
 Has something to do with Wikipedia and airlines ...
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -355,10 +314,6 @@ def get_nr(company_name):
 companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
 for c in companies:
     get_nr(c)
-
-
-
-
 ```
 
 `@solution`
@@ -378,8 +333,6 @@ def get_nr(company_name):
 companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
 for c in companies:
     get_nr(c)
-
-
 ```
 
 `@sct`
@@ -403,7 +356,7 @@ Can you use the code you just saw to find out the number of employees of KLM?
 
 
 `@instructions`
-10000, 22000, 35000, 47000, 50000
+10000,22000,35000,47000,50000
 
 `@hint`
 
