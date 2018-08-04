@@ -343,39 +343,71 @@ for c in companies:
 
 ---
 
-## Insert exercise title here
+## A simple script /2
 
 ```yaml
-type: MultipleChoiceExercise 
-xp: 50 
-key: 632cb7ccce   
+type: NormalExercise 
+xp: 100 
+key: d10eb21c0c   
 ```
 
 
-Can you use the code you just saw to find out the number of employees of KLM?
+Can you modify the script below to return the number of employees of KLM and Finnair (only)?
 
 
 `@instructions`
-- 10000
-- 22000
-- [35000]
-- 47000
+
 
 `@hint`
-It's more than 20000
+
 
 `@pre_exercise_code`
 
 ```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+import urllib
 import re
+    
+def get_nr(company_name):
+	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.read().decode('utf-8')
+	html = re.sub(r'<[^>]+>', '', html)
+	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+	emp = match[0].replace('\n',': ').strip()
+	print(company_name, emp)
+	
+companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
+for c in companies:
+    get_nr(c)
+```
+
+`@solution`
+
+```{python}
+import urllib
+import re
+    
+def get_nr(company_name):
+	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.read().decode('utf-8')
+	html = re.sub(r'<[^>]+>', '', html)
+	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+	emp = match[0].replace('\n',': ').strip()
+	print(company_name, emp)
+	
+companies = ['KLM', 'Finnair']
+for c in companies:
+    get_nr(c)
 ```
 
 `@sct`
 
 ```{python}
-msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
-msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
-msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
-msg4 = "Correct! Python is an extremely versatile language."
-Ex().test_mc(4, [msg1, msg2, msg3, msg4])
+Ex().check
 ```
