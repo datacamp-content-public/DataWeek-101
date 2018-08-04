@@ -443,7 +443,7 @@ key: 2f164fa634
 
 
 `@possible_answers`
-1; [2]; 3
+1 [2] 3
 
 `@feedbacks`
 
