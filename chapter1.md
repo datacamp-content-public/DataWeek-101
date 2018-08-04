@@ -127,16 +127,6 @@ There are four collection data types in the Python programming language:
 `@instructions`
 Run the code and examine the output.
 
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -225,13 +215,6 @@ Change the value of `a` so that the `else` clause is evaluated.
 `@hint`
 `a` needs to be less than (or equal to) 0
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -280,6 +263,20 @@ key: 935f6f9948
 
 
 
+---
+
+## Functions
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: a4c9d49a0a   
+```
+
+
+
+
+
 `@instructions`
 
 
@@ -313,3 +310,67 @@ key: 935f6f9948
 
 ```
 
+
+---
+
+## A simple script
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 0dea768035   
+```
+
+
+A simple script in Python
+
+
+`@instructions`
+Just try to guess what the script does
+
+`@hint`
+Has something to do with Wikipedia ...
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+import requests
+import re
+def get_nr(company_name):
+	r = requests.get('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.text
+	emp = re.findall(r'([/d/,]+).{0,25}[e|E]mployees.{0,25}([/d/,]+)', html)
+    print(emp)
+    return emp
+  
+get_nr('Easyjet')
+
+```
+
+`@solution`
+
+```{python}
+import requests
+import re
+def get_nr(company_name):
+	r = requests.get('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.text
+	emp = re.findall(r'([/d/,]+).{0,25}[e|E]mployees.{0,25}([/d/,]+)', html)
+    print(emp)
+    return emp
+  
+get_nr('Easyjet')
+```
+
+`@sct`
+
+```{python}
+1
+```
