@@ -403,7 +403,7 @@ Can you use the code you just saw to find out the number of employees of KLM?
 
 
 `@instructions`
-[<10000, ~22000, ~35000, ~47000, > 50000]
+10000, 22000, 35000, 47000, 50000
 
 `@hint`
 
