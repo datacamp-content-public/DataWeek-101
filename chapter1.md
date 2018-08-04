@@ -409,5 +409,5 @@ for c in companies:
 `@sct`
 
 ```{python}
-Ex().check
+Ex().check_object("companies").has_equal_value()
 ```
