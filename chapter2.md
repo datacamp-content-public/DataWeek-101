@@ -28,9 +28,9 @@ import pandas as pd
 `@pre_exercise_code`
 
 ```{python}
-
+import pandas as pd
+pd.set_option('display.width', pd.util.terminal.get_terminal_size()[0])
 ```
-
 
 `@sample_code`
 
