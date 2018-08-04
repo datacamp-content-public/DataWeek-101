@@ -360,7 +360,6 @@ Can you use the code you just saw to find out the number of employees of KLM?
 - 22000
 - [35000]
 - 47000
-- 50000
 
 `@hint`
 It's more than 20000
@@ -375,9 +374,9 @@ It's more than 20000
 `@sct`
 
 ```{python}
-- No
-- No
-- Correct
-- No
-- No
+msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
+msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
+msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
+msg4 = "Correct! Python is an extremely versatile language."
+test_mc(4, [msg1, msg2, msg3, msg4])
 ```
