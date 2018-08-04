@@ -387,3 +387,36 @@ for c in companies:
 ```{python}
 1
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: MultipleChoiceExercise 
+xp: 50 
+key: 632cb7ccce   
+```
+
+
+Can you use the code you just saw to find out the number of employees of KLM?
+
+
+`@instructions`
+<10000, ~22000, ~35000, ~47000, > 50000
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+1
+```
