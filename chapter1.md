@@ -341,16 +341,25 @@ Has something to do with Wikipedia ...
 `@sample_code`
 
 ```{python}
-import requests
+import urllib
 import re
+
+TAG_RE = re.compile(r'<[^>]+>')
+
+def remove_tags(text):
+    return TAG_RE.sub('', text)
+    
 def get_nr(company_name):
-	r = requests.get('https://en.wikipedia.org/wiki/{}'.format(company_name))
-	html = r.text
-	emp = re.findall(r'([/d/,]+).{0,25}[e|E]mployees.{0,25}([/d/,]+)', html)
-    print(emp)
-    return emp
+	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.read().decode('utf-8')
+	print(html)
+	html = remove_tags(html)
+	emp = re.findall(r'[e|E]mployees.*', html)
+	print(emp)
+	return emp
   
 get_nr('Easyjet')
+
 
 ```
 
