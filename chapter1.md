@@ -357,10 +357,13 @@ Can you use the code you just saw to find out the number of employees of KLM?
 
 `@instructions`
 - 10000
-- 22000,35000,47000,50000
+- 22000
+- [35000]
+- 47000
+- 50000
 
 `@hint`
-
+It's more than 20000
 
 `@pre_exercise_code`
 
@@ -372,5 +375,9 @@ Can you use the code you just saw to find out the number of employees of KLM?
 `@sct`
 
 ```{python}
-1
+- No
+- No
+- Correct
+- No
+- No
 ```
