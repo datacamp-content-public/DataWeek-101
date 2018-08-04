@@ -322,14 +322,14 @@ key: 0dea768035
 ```
 
 
-A simple script in Python
+A simple script in Python.
 
 
 `@instructions`
-Just try to guess what the script does
+Just try to guess what the script does. Once you're done, press "Run" and see what the script prints.
 
 `@hint`
-Has something to do with Wikipedia ...
+Has something to do with Wikipedia and airlines ...
 
 `@pre_exercise_code`
 
@@ -343,22 +343,20 @@ Has something to do with Wikipedia ...
 ```{python}
 import urllib
 import re
-
-TAG_RE = re.compile(r'<[^>]+>')
-
-def remove_tags(text):
-    return TAG_RE.sub('', text)
     
 def get_nr(company_name):
 	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
 	html = r.read().decode('utf-8')
-	print(html)
-	html = remove_tags(html)
-	emp = re.findall(r'[e|E]mployees.*', html)
-	print(emp)
-	return emp
-  
-get_nr('Easyjet')
+	html = re.sub(r'<[^>]+>', '', html)
+	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+	emp = match[0].replace('\n',': ').strip()
+	print(company_name, emp)
+	
+companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
+for c in companies:
+    get_nr(c)
+
+
 
 
 ```
@@ -366,16 +364,22 @@ get_nr('Easyjet')
 `@solution`
 
 ```{python}
-import requests
+import urllib
 import re
+    
 def get_nr(company_name):
-	r = requests.get('https://en.wikipedia.org/wiki/{}'.format(company_name))
-	html = r.text
-	emp = re.findall(r'([/d/,]+).{0,25}[e|E]mployees.{0,25}([/d/,]+)', html)
-    print(emp)
-    return emp
-  
-get_nr('Easyjet')
+	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
+	html = r.read().decode('utf-8')
+	html = re.sub(r'<[^>]+>', '', html)
+	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+	emp = match[0].replace('\n',': ').strip()
+	print(company_name, emp)
+	
+companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
+for c in companies:
+    get_nr(c)
+
+
 ```
 
 `@sct`
