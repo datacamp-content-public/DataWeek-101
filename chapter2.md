@@ -36,12 +36,9 @@ import pandas as pd
 
 ```{python}
 import pandas as pd
-
 df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
-
 from IPython.display import display, HTML
-display(df.iloc[5])
-display(HTML(df.iloc[5].to_html())
+print(df.to_html())
 ```
 
 `@solution`
