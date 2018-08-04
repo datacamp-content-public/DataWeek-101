@@ -367,9 +367,8 @@ It's more than 20000
 `@pre_exercise_code`
 
 ```{python}
-
+import re
 ```
-
 
 `@sct`
 
