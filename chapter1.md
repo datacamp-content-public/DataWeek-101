@@ -424,3 +424,26 @@ Can you use the code you just saw to find out the number of employees of KLM?
 ```{python}
 1
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: PureMultipleChoiceExercise 
+xp: 50 
+key: 2f164fa634   
+```
+
+
+
+
+
+`@hint`
+
+
+`@possible_answers`
+1; [2]; 3
+
+`@feedbacks`
+
