@@ -496,7 +496,7 @@ def get_nr(company_name):
     page = 'https://en.wikipedia.org/wiki/{}'.format(company_name)
     
     # we use the function urlopen() from the request sub-package in urllib
-	r = urllib.request.urlopen(page)
+    r = urllib.request.urlopen(page)
     
     # we read and decode the html from the page
     html = r.read().decode('utf-8')
