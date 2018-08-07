@@ -306,14 +306,14 @@ x = str(5)
 y = x * 6 #print 555555 (cause `x` is now a string)
 ```
 
-Other functions are available in separate **Libraries** that can be imported. Some popular libraries ship with Python most of the time, even more libraries are included in distributions like **Anaconda**.
+Other functions are available in separate **Packages** that can be imported. Some popular packages ship with Python most of the time, even more are included in distributions like **Anaconda**.
 
 ```
 import Math
 a = Math.log(b)
 ```
 
-We will see other ways of importing functions. Some libraries don't come with Python by default and need to be installed. Libraries can be installed from a terminal with the command `pip install <library>` or, if using Anaconda, `conda install <library>`.
+We will see other ways of importing functions. Some packages don't come with Python by default and need to be installed. Packages can be installed from a terminal with the command `pip install <package>` or, if using Anaconda, `conda install <package>`.
 
 You can also write your own functions:
 ```
