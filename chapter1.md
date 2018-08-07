@@ -292,6 +292,7 @@ total = 0
 my_list = [2, 4, 6]
 for item in my_list:
     total += item
+    print(total)
 ```
 the result is 
 ```
