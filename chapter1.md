@@ -370,7 +370,7 @@ print( sum_two_numbers_as_strings(7.1, 5.2) )    #prints 7.15.2
 # Print the outcome. What do you notice?
 
 def sum_of_bool(a, b, c):
-  return bool(a)+bool(b)+boo(c)
+  return bool(a)+bool(b)+bool(c)
 
 result = sum_of_bool(12, 30, 55)
 print("result is ", result)
