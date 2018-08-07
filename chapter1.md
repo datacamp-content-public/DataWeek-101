@@ -292,9 +292,8 @@ key: a4c9d49a0a
 
 Out of the box, Python offers a bunch of built-in functions to make your life as a data scientist easier, e.g. type conversion functions `str()` (converts to string), `int()` (to int), `bool()` (to boolean) and `float()` (to floating point) These are built-in functions as well.
 ```
-x = 5
-y = str(5)
-z = y * 6  #print 555555 (cause `y` is now a string)
+x = str(5)
+y = x * 6 #print 555555 (cause `x` is now a string)
 ```
 
 Other functions are available in separate **Libraries** that can be imported. Some popular libraries ship with Python most of the time, even more libraries are included in distributions like **Anaconda**.
