@@ -286,7 +286,52 @@ key: 935f6f9948
 ```
 
 
+Python’s **for** statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence. 
+```
+my_list = [2, 4, 6]
+for item in my_list:
+    print(item)
+```
+the result is 
+```
+2
+4
+6
+```
 
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
 
 
 ---
