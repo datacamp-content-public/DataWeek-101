@@ -20,8 +20,6 @@ x = 5                         # integers - this is a comment
 y = True                      # booleans
 z = "Learning python"         # strings
 
-# comments start with  `#`
-
 ```
 Python supports by default simple operations:
 ```
@@ -30,7 +28,7 @@ b = 7 / 2
 c = a + 1
 d = c - 1
 ```
-We can print to screen using `print()`:
+We can print to the console using `print()`:
 ```
 print(a)
 print(b, c, d)
