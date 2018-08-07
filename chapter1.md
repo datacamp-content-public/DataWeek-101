@@ -118,6 +118,7 @@ key: e3b431cc13
 
 
 There are four collection data types in the Python programming language:
+
 **List**, **Dictionary**, Tuple and Set.
 
 |Collection|Ordered|Changeable|Allows Duplicates|
