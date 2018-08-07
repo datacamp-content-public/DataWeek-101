@@ -69,7 +69,9 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Assign "Hello" to x, 5 to y and their product to z. Print z to screen.
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Assign "Hello" to x, 5 to y and their product to z. 
+# Print z to screen.
 
 x = 
 y = 
@@ -92,7 +94,9 @@ d = c - 1
 print(a)
 print(b, c, d)
 
-# Assign "Hello" to x, 5 to y and their product to z. Print z to screen.
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Assign "Hello" to x, 5 to y and their product to z. 
+# Print z to screen.
 
 x = "Hello"
 y = 5
