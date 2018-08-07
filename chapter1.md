@@ -301,6 +301,18 @@ the result is
 12
 ```
 
+To repeat the same action a number `N` of times, we need to pass a list from 0 to 9 to the for statement. We can do this easily using the `range()` function:
+```
+for number in range(3):
+    print(number)
+```
+which prints
+```
+0
+1
+2
+```
+
 
 `@instructions`
 
