@@ -288,15 +288,16 @@ key: 935f6f9948
 
 Python’s **for** statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence. 
 ```
+total = 0
 my_list = [2, 4, 6]
 for item in my_list:
-    print(item)
+    total += item
 ```
 the result is 
 ```
 2
-4
 6
+12
 ```
 
 
