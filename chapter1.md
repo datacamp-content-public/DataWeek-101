@@ -502,14 +502,14 @@ def get_nr(company_name):
     html = r.read().decode('utf-8')
     
     # we use regular expressions (the re package) to strip all html tags 
-	html = re.sub(r'<[^>]+>', '', html)
+    html = re.sub(r'<[^>]+>', '', html)
     
     # we find all the occurrences in the page of the word "Employees" followed by a number
-	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+    match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
     
     # we get the first match, remove the newline and replace it with a colon, and print
-	emp = match[0].replace('\n',': ').strip()
-	print(company_name, emp)
+    emp = match[0].replace('\n',': ').strip()
+    print(company_name, emp)
 	
 # we list all the companies 
 companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
