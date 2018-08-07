@@ -463,6 +463,83 @@ for c in companies:
 ```yaml
 type: NormalExercise 
 xp: 100 
+key: c6c8546831   
+```
+
+
+Let's analyse the code we just ran.
+
+
+`@instructions`
+Just look at the code and the explanation of what every line does. Press `Submit` when you're done.
+
+`@hint`
+You don't need to do anything.
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+# we import two external packages
+import urllib
+import re
+    
+def get_nr(company_name):
+    # this is another way of formatting strings using {} as a placeholder that is filled with
+    # the arguments of format()
+    page = 'https://en.wikipedia.org/wiki/{}'.format(company_name)
+    
+    # we use the function urlopen() from the request sub-package in urllib
+	r = urllib.request.urlopen(page)
+    
+    # we read and decode the html from the page
+    html = r.read().decode('utf-8')
+    
+    # we use regular expressions (the re package) to strip all html tags 
+	html = re.sub(r'<[^>]+>', '', html)
+    
+    # we find all the occurrences in the page of the word "Employees" followed by a number
+	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+    
+    # we get the first match, remove the newline and replace it with a colon, and print
+	emp = match[0].replace('\n',': ').strip()
+	print(company_name, emp)
+	
+# we list all the companies 
+companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
+
+# we run the function for each element of the list (the companies)
+for c in companies:
+    get_nr(c)
+```
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
+## A simple script /3
+
+```yaml
+type: NormalExercise 
+xp: 100 
 key: d10eb21c0c   
 ```
 
