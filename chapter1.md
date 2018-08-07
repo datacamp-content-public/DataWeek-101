@@ -379,7 +379,7 @@ print("result is ", result)
 `@sct`
 
 ```{python}
-Ex().check_object("result").
+Ex().check_object("result").has_equal_value()
 ```
 
 ---
