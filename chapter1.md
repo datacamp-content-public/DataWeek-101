@@ -207,7 +207,7 @@ key: f7a970dee6
 ```
 
 
-If-then-else blocks are used in Python to perform different ... depending on which condition is met.
+Python knows the usual control flow statements known from other languages. The most common is the **if** statement.
 ```
 a = 1
 b = 2
@@ -230,6 +230,13 @@ Change the value of `a` so that the `else` clause is evaluated.
 
 `@hint`
 `a` needs to be less than (or equal to) 0
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
