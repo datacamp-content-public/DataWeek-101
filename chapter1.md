@@ -39,7 +39,12 @@ print(b, c, d)
 
 `@instructions`
 This is your first exercise. During an exercise, you need to complete the code on the right that appears after
+
 `#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~`
+
+When you're done, hit `Run Code` to execute your python script and see the output in the IPython Shell (below). If you think everything is correct, hit `Submit Answer` to check your submission and get feedback.
+If you're stuck, you can click Get Hint, and ultimately Get Solution.
+
 In this case: assign the value "Hello" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
 
 `@hint`
