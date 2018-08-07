@@ -379,9 +379,8 @@ print("result is ", result)
 `@sct`
 
 ```{python}
-
+Ex().check_object("result").
 ```
-
 
 ---
 
