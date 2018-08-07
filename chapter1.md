@@ -290,7 +290,45 @@ key: a4c9d49a0a
 ```
 
 
+Out of the box, Python offers a bunch of built-in functions to make your life as a data scientist easier, e.g. type conversion functions `str()` (converts to string), `int()` (to int), `bool()` (to boolean) and `float()` (to floating point) These are built-in functions as well.
 
+`x = 5`
+`y = str(5)`
+`z = y * 6` .  #print 555555 (cause `y` is now a string)
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
 
 
 ---
