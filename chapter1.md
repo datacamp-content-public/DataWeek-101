@@ -14,11 +14,7 @@ key: bda4ea2742
 
 The equal sign `=` is used to assign a value to a variable.
 ```
-# this is a comment
-x = 5                         # integers - this is a comment
-y = True                      # booleans
-z = "Learning python"         # strings
-
+x = 5                        
 ```
 Python supports by default simple operations:
 ```
