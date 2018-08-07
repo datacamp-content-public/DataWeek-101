@@ -118,7 +118,7 @@ key: e3b431cc13
 
 
 There are four collection data types in the Python programming language:
-**List**, **Dictionary**, Tuple** and **Set**.
+**List**, **Dictionary**, Tuple and Set.
 
 |Collection|Ordered|Changeable|Allows Duplicates|
 |------------------------------------------------------|
@@ -129,10 +129,11 @@ There are four collection data types in the Python programming language:
 
 
 `@instructions`
-Run the code and examine the output.
+Change the first element of a to 7 and the 'name' key in b to Mary
 
 `@hint`
-
+a[ ... ] = ...
+b["..."] = "..."
 
 `@pre_exercise_code`
 
@@ -157,6 +158,7 @@ b = {'name': 'John',
 
 b['name'] = 'Paul'
 
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 # Change the first element of a to 7
 a
 
@@ -180,6 +182,7 @@ b = {'name': 'John',
 
 b['name'] = 'Paul'
 
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 # Change the first element of a to 7
 a[0] = 7
 
