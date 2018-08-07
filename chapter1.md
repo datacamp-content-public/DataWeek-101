@@ -117,9 +117,7 @@ key: e3b431cc13
 ```
 
 
-There are four collection data types in the Python programming language:
-
-**List**, **Dictionary**, Tuple and Set.
+Python knows a number of compound data types (collections), used to group together other values. The most versatile is the **List**, which can be written as a list of comma-separated values (items) between square brackets. There other collection data types are: **Dictionary**, Tuple and Set. Here are the main differences:
 
 ||Ordered|Changeable|Allows Duplicates|
 |------------------------------------------------------|
