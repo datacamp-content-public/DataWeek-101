@@ -470,9 +470,25 @@ key: d10eb21c0c
 Can you modify the script below to return the number of employees of KLM and Finnair (only)?
 
 
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 
 ```{python}
+#~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
+# Change the code to return the number of employees of KLM and Finnair (only)
+
 import urllib
 import re
     
@@ -492,6 +508,9 @@ for c in companies:
 `@solution`
 
 ```{python}
+#~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
+# Change the code to return the number of employees of KLM and Finnair (only)
+
 import urllib
 import re
     
