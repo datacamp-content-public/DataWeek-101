@@ -198,7 +198,7 @@ Ex().check_object('b').has_equal_value()
 
 ---
 
-## If-then-else
+## if statements
 
 ```yaml
 type: NormalExercise 
@@ -220,9 +220,9 @@ else:
 ```
 
 Note that 
-
-- a colon is needed at the end of the `if(condition)` line
-- the special operator `+=` (`b += 1` is the same as writing `b = b + 1`)
+- a **colon** is needed at the end of the `if(condition)` line
+- all the code to be executed when the condition is met is **indented** (this is mandatory in Python)
+- the special operator `+=` in `b += 1` is a shorthand for `b = b + 1`
 
 
 `@instructions`
