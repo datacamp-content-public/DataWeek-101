@@ -471,10 +471,10 @@ Can you modify the script below to return the number of employees of KLM and Fin
 
 
 `@instructions`
-
+Change the code on the right to return the number of employees of KLM and Finnair (only)
 
 `@hint`
-
+You need to change the list of companies
 
 `@pre_exercise_code`
 
