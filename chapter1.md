@@ -348,7 +348,7 @@ print( sum_two_numbers_as_strings(7.1, 5.2) )    #prints 7.15.2
 def ...
 
 result = 
-print(result)
+print("result is ",result)
 ```
 
 `@solution`
@@ -373,7 +373,7 @@ def sum_of_bool(a, b, c):
   return bool(a)+bool(b)+boo(c)
 
 result = sum_of_bool(12, 30, 55)
-print(result)
+print("result is ", result)
 ```
 
 `@sct`
