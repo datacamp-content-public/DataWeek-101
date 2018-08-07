@@ -314,6 +314,8 @@ def myfunction(a,b):
 
 `@instructions`
 Complete the code on the right.
+Write a function that takes three numbers, converts them to boolean and sums them. Call the function with 12, 30, 55 as input and assign the output to the variable `result` (e.g. result = myfunc(12,30,55)) 
+Print the outcome. What do you notice?
 
 `@hint`
 
@@ -328,9 +330,26 @@ Complete the code on the right.
 `@sample_code`
 
 ```{python}
+def sum_two_numbers(a, b):
+  return a+b
 
+def sum_two_numbers_as_strings(a, b):
+  return str(a)+str(b)
+
+print( sum_two_numbers(7.1, 5.2) )    #prints 12.3
+print( sum_two_numbers_as_strings(7.1, 5.2) )    #prints 7.15.2
+
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Write a function that takes three numbers, converts them to boolean and
+# sums them. Call the function with 12, 30, 55 as input and assign the 
+# output to the variable `result` (e.g. result = myfunc(12,30,55)) 
+# Print the outcome. What do you notice?
+
+def ...
+
+result = 
+print(result)
 ```
-
 
 `@solution`
 
@@ -338,22 +357,23 @@ Complete the code on the right.
 def sum_two_numbers(a, b):
   return a+b
 
-def concat_two_numbers(a, b):
+def sum_two_numbers_as_strings(a, b):
   return str(a)+str(b)
 
 print( sum_two_numbers(7.1, 5.2) )    #prints 12.3
-print( concat_two_numbers(7.1, 5.2) )    #prints 7.15.2
+print( sum_two_numbers_as_strings(7.1, 5.2) )    #prints 7.15.2
 
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
-# Write a function that takes three numbers, converts them to boolean
-# Call the function with 12, 30, 55 as input (e.g. myfunc(12,30,55))
-# and assign the output to variable `result` (e.g. results = myfunc(12,30,55)) 
-# What is the result?
+# Write a function that takes three numbers, converts them to boolean and
+# sums them. Call the function with 12, 30, 55 as input and assign the 
+# output to the variable `result` (e.g. result = myfunc(12,30,55)) 
+# Print the outcome. What do you notice?
 
 def sum_of_bool(a, b, c):
   return bool(a)+bool(b)+boo(c)
 
-print( 
+result = sum_of_bool(12, 30, 55)
+print(result)
 ```
 
 `@sct`
