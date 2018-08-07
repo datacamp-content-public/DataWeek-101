@@ -218,11 +218,8 @@ else:
         b += 10
 
 ```
-
-Note that 
-- a **colon** is needed at the end of the `if(condition)` line
-- all the code to be executed when the condition is met is **indented** (this is mandatory in Python)
-- the special operator `+=` in `b += 1` is a shorthand for `b = b + 1`
+Note that the body of the if statement is **indented**: indentation is Python’s way of grouping statements (is mandatory). You have to type a tab or space(s) for each indented line.
+The special operator `+=` in `b += 1` is a shorthand for `b = b + 1`
 
 
 `@instructions`
