@@ -130,7 +130,7 @@ There are four collection data types in the Python programming language:
 
 
 `@instructions`
-Change the first element of a to 7 and the 'name' key in b to Mary
+Change the first element of `a` to 7 and the 'name' key in `b` to Mary
 
 `@hint`
 a[ ... ] = ...
