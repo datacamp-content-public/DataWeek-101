@@ -290,7 +290,7 @@ key: a4c9d49a0a
 ```
 
 
-Out of the box, Python offers a bunch of built-in functions to make your life easier, e.g. type conversion functions `str()` (converts to string), `int()` (to int), `bool()` (to boolean) and `float()` (to floating point) These are built-in functions as well.
+Out of the box, Python offers a bunch of built-in functions to make your life easier, e.g. type conversion functions `str()` (converts to string), `int()` (to int), `bool()` (to boolean) and `float()` (to floating point).
 ```
 x = str(5)
 y = x * 6 #print 555555 (cause `x` is now a string)
