@@ -121,7 +121,7 @@ There are four collection data types in the Python programming language:
 
 **List**, **Dictionary**, Tuple and Set.
 
-|Collection|Ordered|Changeable|Allows Duplicates|
+||Ordered|Changeable|Allows Duplicates|
 |------------------------------------------------------|
 |List|Yes|Yes|Yes|
 |Dictionary|No|Yes|No|
