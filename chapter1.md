@@ -238,6 +238,9 @@ Change the value of `a` so that the `else` clause is evaluated.
 `@sample_code`
 
 ```{python}
+#~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
+# Change the value of `a` so that the `else` clause is evaluated.
+
 a = 1
 b = 2
 
@@ -252,6 +255,9 @@ print(b)
 `@solution`
 
 ```{python}
+#~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
+# Change the value of `a` so that the `else` clause is evaluated.
+
 a = 0
 b = 2
 
