@@ -38,12 +38,21 @@ print(b, c, d)
 
 
 `@instructions`
-Complete the code on the right. Assign the value "Hello" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
+This is your first exercise. During an exercise, you need to complete the code on the right that appears after
+`#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~`
+In this case: assign the value "Hello" to `x` and `5` to `y` and their product to `z`. What do you expect to be the output?  Finally, print `z` to screen.
 
 `@hint`
 `x = "some words"`
 `y = `
 `z = x *`
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 
@@ -353,19 +362,6 @@ key: d10eb21c0c
 
 
 Can you modify the script below to return the number of employees of KLM and Finnair (only)?
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
 
 
 `@sample_code`
