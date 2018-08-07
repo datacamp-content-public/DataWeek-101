@@ -306,6 +306,12 @@ a = Math.log(b)
 
 Some libraries don't come with Python by default and need to be installed. Libraries can be installed from a terminal with the command `pip install <library>` or, if using Anaconda, `conda install <library>`.
 
+You can also write your own functions:
+```
+def myfunction(a,b):
+    return a+b
+```
+
 
 `@instructions`
 
