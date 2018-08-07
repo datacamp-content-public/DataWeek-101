@@ -313,7 +313,7 @@ def myfunction(a,b):
 
 
 `@instructions`
-
+Complete the code on the right.
 
 `@hint`
 
@@ -335,9 +335,26 @@ def myfunction(a,b):
 `@solution`
 
 ```{python}
+def sum_two_numbers(a, b):
+  return a+b
 
+def concat_two_numbers(a, b):
+  return str(a)+str(b)
+
+print( sum_two_numbers(7.1, 5.2) )    #prints 12.3
+print( concat_two_numbers(7.1, 5.2) )    #prints 7.15.2
+
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Write a function that takes three numbers, converts them to boolean
+# Call the function with 12, 30, 55 as input (e.g. myfunc(12,30,55))
+# and assign the output to variable `result` (e.g. results = myfunc(12,30,55)) 
+# What is the result?
+
+def sum_of_bool(a, b, c):
+  return bool(a)+bool(b)+boo(c)
+
+print( 
 ```
-
 
 `@sct`
 
