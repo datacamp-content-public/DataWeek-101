@@ -364,19 +364,16 @@ key: e8f43b00c3
 ```
 
 
-Let's solve an exercise using what we've learned so far. 
+Let's solve an exercise using what we've learnt so far. 
 
 A **palindrome** is a string that reads the same forwards and backwards.
 Write a function that prints out whether the argument is a palindrome or not. 
 
 Useful to know:
-- Strings behave like lists (of characters): 
 
-the first character is in `s[0]`, the second in `s[1]`, etc...
+Strings behave like lists (of characters):  the first character is in `s[0]`, the second in `s[1]`, etc...
 
-- negative indexes get elements starting from the last
-
-the last character is in `s[-1]`, the second last in `s[-2]`, etc...
+Negative indexes get elements starting from the last: the last character is in `s[-1]`, the second last in `s[-2]`, etc...
 
 ```
 s = "a long sentence"
