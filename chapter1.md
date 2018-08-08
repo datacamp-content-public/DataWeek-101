@@ -350,10 +350,7 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-Ex().check_if_else().multi(
-    check_test().has_equal_ast(),
-    check_body().has_equal_output()
-)
+Ex().has_code("if.*>\s*10:")
 ```
 
 ---
