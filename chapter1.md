@@ -295,7 +295,7 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 
 
 `@instructions`
-
+Write a program that takes the list `my_numbers` and prints all the numbers lower than 10.
 
 `@hint`
 
@@ -317,9 +317,14 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 `@solution`
 
 ```{python}
+total = 0
+my_list = [2, 4, 6]
+for item in my_list:
+    total += item
+    print(total)
+    
 
 ```
-
 
 `@sct`
 
