@@ -385,11 +385,7 @@ print(s[-2])    # prints "c"
 
 
 `@instructions`
-Write a function that prints out whether the argument is a palindrome or not. 
-
-Extra: Check the documentation for built-in functions and find how to do this in **one line of code**.
-
-https://docs.python.org/3/library/functions.html
+Write a function that prints out whether the argument is a palindrome or not.
 
 `@hint`
 One way of solving this is checking that the same character is found while iterating the string forward and backward (e.g. s[0] == s[-1], s[1] == s[-2], etc...)
