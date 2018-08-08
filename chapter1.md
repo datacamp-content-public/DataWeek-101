@@ -42,13 +42,6 @@ In this case: assign the value "Hello" to `x` and `5` to `y` and their product t
 `y = `
 `z = x *`
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -133,13 +126,6 @@ Change the first element of `a` to 7 and the 'name' key in `b` to Mary
 `@hint`
 a[ ... ] = ...
 b["..."] = "..."
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
@@ -228,13 +214,6 @@ Change the value of `a` so that the `else` clause is evaluated.
 `@hint`
 `a` needs to be less than (or equal to) 0
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -301,7 +280,7 @@ the result is
 12
 ```
 
-To repeat the same action a number `N` of times, we need to pass a list from 0 to 9 to the for statement. We can do this easily using the `range()` function:
+To repeat the same action `N` times, we need to pass a list from `0` to `N-1` to the for statement. We can do this easily using the `range()` function:
 ```
 for number in range(3):
     print(number)
@@ -312,6 +291,7 @@ which prints
 1
 2
 ```
+Note how `range(N)` create a list of length `N` from `0` to `N-1`
 
 
 `@instructions`
@@ -385,16 +365,6 @@ def myfunction(a,b):
 Complete the code on the right.
 Write a function that takes three numbers, converts them to boolean and sums them. Call the function with 12, 30, 55 as input and assign the output to the variable `result` (e.g. result = myfunc(12,30,55)) 
 Print the outcome. What do you notice?
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
@@ -535,13 +505,6 @@ Just look at the code and the explanation of what every line does. Press `Submit
 `@hint`
 You don't need to do anything.
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 
 ```{python}
@@ -578,20 +541,6 @@ for c in companies:
     get_nr(c)
 ```
 
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
 ---
 
 ## A simple script /3
@@ -611,13 +560,6 @@ Change the code on the right to return the number of employees of KLM and Finnai
 
 `@hint`
 You need to change the list of companies
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 
