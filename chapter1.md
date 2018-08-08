@@ -350,7 +350,7 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-Ex().has_output(r"2.4",no_output_msg = "Wrong")
+Ex().check_if_else().has_equal_ast())
 ```
 
 ---
