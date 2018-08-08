@@ -381,7 +381,7 @@ s = "a long sentence"
 print(s[0])     # prints "a"
 print(s[1])     # prints " "
 print(s[2])     # prints "l"
-print(s[-1])    # prints "e"  (last char of the string"
+print(s[-1])    # prints "e"  (last char of the string)
 print(s[-2])    # prints "c" 
 ```
 
