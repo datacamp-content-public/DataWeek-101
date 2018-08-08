@@ -364,7 +364,9 @@ key: e8f43b00c3
 ```
 
 
-A palindrome is a string that reads the same forwards and backwards.
+Let's solve an exercise using what we've learned so far. 
+
+A **palindrome** is a string that reads the same forwards and backwards.
 Write a function that prints out whether the argument is a palindrome or not. 
 
 Useful to know:
@@ -387,10 +389,11 @@ print(s[-2])    # prints "c"
 
 
 `@instructions`
-
+Write a function that prints out whether the argument is a palindrome or not. 
+Extra: Check the documentation for string functions and find how to do this is **one line of code**
 
 `@hint`
-
+One way of solving this is checking that the same character is found while iterating the string forward and backward (e.g. s[0] == s[-1], s[1] == s[-2], etc...)
 
 `@pre_exercise_code`
 
