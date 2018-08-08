@@ -370,11 +370,20 @@ Write a function that prints out whether the argument is a palindrome or not.
 Useful to know:
 - Strings behave like lists (of characters): 
 
-s = "string", the first character is in `s[0]`, the second in `s[1]`, etc...
+the first character is in `s[0]`, the second in `s[1]`, etc...
 
 - negative indexes get elements starting from the last
 
 the last character is in `s[-1]`, the second last in `s[-2]`, etc...
+
+```
+s = "a long sentence"
+print(s[0])     # prints "a"
+print(s[1])     # prints " "
+print(s[2])     # prints "l"
+print(s[-1])    # prints "e"  (last char of the string"
+print(s[-2])    # prints "c" 
+```
 
 
 `@instructions`
