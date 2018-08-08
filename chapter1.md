@@ -386,7 +386,7 @@ print(s[-2])    # prints "c"
 
 `@instructions`
 Write a function that prints out whether the argument is a palindrome or not. 
-__
+
 Extra: Check the documentation for built-in functions and find how to do this in **one line of code**.
 
 https://docs.python.org/3/library/functions.html
