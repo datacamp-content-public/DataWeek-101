@@ -369,10 +369,9 @@ Let's solve an exercise using what we've learnt so far.
 A **palindrome** is a string that reads the same forwards and backwards.
 Write a function that prints out whether the argument is a palindrome or not. 
 
-Useful to know:
+_Useful to know:_
 
 Strings behave like lists (of characters):  the first character is in `s[0]`, the second in `s[1]`, etc...
-
 Negative indexes get elements starting from the last: the last character is in `s[-1]`, the second last in `s[-2]`, etc...
 
 ```
@@ -387,7 +386,7 @@ print(s[-2])    # prints "c"
 
 `@instructions`
 Write a function that prints out whether the argument is a palindrome or not. 
-
+__
 Extra: Check the documentation for built-in functions and find how to do this in **one line of code**.
 
 https://docs.python.org/3/library/functions.html
