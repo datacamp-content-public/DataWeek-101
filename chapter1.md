@@ -350,7 +350,7 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-Ex().has_printout(0)
+Ex().check_function('print').has_equal_value()
 ```
 
 ---
