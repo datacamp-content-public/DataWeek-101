@@ -400,23 +400,39 @@ One way of solving this is checking that the same character is found while itera
 `@sample_code`
 
 ```{python}
-
+def is_palindrome():
+  ...
+  
+  
+# ~~~~~~~ Test (do not modify code below this line) ~~~~~~
+a = "racecar"
+b = "carpool"
+a_is_pal = is_palindrome(a)
+b_is_pal = is_palindrome(b)
+print(a_is_pal, b_is_pal)
 ```
-
 
 `@solution`
 
 ```{python}
-
+def is_palindrome(s):
+  return s == s[::-1]
+  
+  
+# ~~~~~~~ Test (do not modify code below this line) ~~~~~~
+a = "racecar"
+b = "carpool"
+a_is_pal = is_palindrome(a)
+b_is_pal = is_palindrome(b)
+print(a_is_pal, b_is_pal)
 ```
-
 
 `@sct`
 
 ```{python}
-
+Ex().check_object("a_is_pal").has_equal_value()
+Ex().check_object("b_is_pal").has_equal_value()
 ```
-
 
 ---
 
