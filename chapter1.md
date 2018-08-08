@@ -351,11 +351,7 @@ for n in my_numbers:
 
 ```{python}
 Ex().check_if_else().multi(
-    check_test().multi(
-        set_env(x = 2).has_equal_value(),
-        set_env(x = 20).has_equal_value(),
-        set_env(x = 100).has_equal_value()
-    ),
+    check_test().has_equal_ast(),
     check_body().has_equal_output()
 )
 ```
