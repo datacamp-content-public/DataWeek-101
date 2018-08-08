@@ -351,7 +351,7 @@ for n in my_numbers:
 
 ```{python}
 #Ex().check_function('print').has_equal_value()
-Ex().has_printout(1)
+Ex().has_printout(0)
 ```
 
 ---
