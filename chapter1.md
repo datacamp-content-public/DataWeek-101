@@ -350,7 +350,7 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-Ex().check_if_else().has_equal_ast())
+Ex().check_if_else().has_equal_ast()
 ```
 
 ---
