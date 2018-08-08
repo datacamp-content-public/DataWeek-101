@@ -338,7 +338,7 @@ for item in my_list:
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 # Print all the numbers lower than 10 in the list `my_numbers`
 
-my_numbers = [2, 4, 7, 8, 10, 11, 30, 44, 55, 78]
+my_numbers = [2, 4, 10, 11, 30, 44, 55, 78]
 
 for n in my_numbers:
     if n > 10:
@@ -350,8 +350,7 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-#Ex().check_function('print').has_equal_value()
-Ex().check_function('print').check_args(0).has_equal_value()
+Ex().has_output(r"2.4",no_output_msg = "Wrong")
 ```
 
 ---
