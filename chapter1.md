@@ -350,7 +350,8 @@ for n in my_numbers:
 `@sct`
 
 ```{python}
-Ex().has_code("if.*>\s*10:")
+Ex().has_code("if.*>\s*10\s*:", not_typed_msg="you didn't use the right if statement")
+Ex().has_code("n\s*in\s*my_numbers\s*:", not_typed_msg="you didn't use the right for loop statement")
 ```
 
 ---
