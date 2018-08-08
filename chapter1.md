@@ -295,7 +295,7 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 
 
 `@instructions`
-Write a program that takes the list `my_numbers` and prints all the numbers lower than 10.
+Print all the numbers lower than 10 in the list `my_numbers`
 
 `@hint`
 
@@ -310,9 +310,21 @@ Write a program that takes the list `my_numbers` and prints all the numbers lowe
 `@sample_code`
 
 ```{python}
+total = 0
+my_list = [2, 4, 6]
+for item in my_list:
+    total += item
+    print(total)
+    
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Print all the numbers lower than 10 in the list `my_numbers`
 
+my_numbers = [2, 4, 7, 8, 10, 11, 30, 44, 55, 78]
+
+for ...
+    ...
+        print(n)
 ```
-
 
 `@solution`
 
@@ -323,6 +335,15 @@ for item in my_list:
     total += item
     print(total)
     
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Print all the numbers lower than 10 in the list `my_numbers`
+
+my_numbers = [2, 4, 7, 8, 10, 11, 30, 44, 55, 78]
+
+for n in my_numbers:
+    if n > 10:
+        print(n)
+
 
 ```
 
