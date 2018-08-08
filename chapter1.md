@@ -355,6 +355,64 @@ Ex().has_code("if.*>\s*10\s*:", not_typed_msg="you didn't use the right if state
 
 ---
 
+## Palindromes
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: e8f43b00c3   
+```
+
+
+A palindrome is a string that reads the same forwards and backwards.
+Write a function that prints out whether the argument is a palindrome or not. 
+
+Useful to know:
+- Strings behave like lists (of characters): 
+
+s = "string", the first character is in `s[0]`, the second in `s[1]`, etc...
+
+- negative indexes get elements starting from the last
+
+the last character is in `s[-1]`, the second last in `s[-2]`, etc...
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
 ## Functions
 
 ```yaml
