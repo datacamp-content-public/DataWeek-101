@@ -159,7 +159,7 @@ Ex().has_equal_output()
 
 ---
 
-## Attributes and Methods
+## Attributes and Methods [OPTIONAL]
 
 ```yaml
 type: NormalExercise 
@@ -167,8 +167,6 @@ xp: 100
 key: c0823c10bd   
 ```
 
-
-When a dataframe is created, a few variables are automatically created. 
 
 All data in a Python program is represented by **objects**. Even the core types we just saw (integer, strings, etc...) are special kinds of objects.
 We can think of an object as a container that can store specific _variables_ and _functions_. 
@@ -204,13 +202,12 @@ print( s.title() )      #prints Hello
 
 
 `@sample_code`
-```{python}
-import pandas as pd
-df = pd.DataFrame({ 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] })
 
-print( df.columns )
-print( df.head() )
+```{python}
+
 ```
+
+
 `@solution`
 
 ```{python}
