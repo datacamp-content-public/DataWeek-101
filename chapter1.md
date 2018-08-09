@@ -457,6 +457,13 @@ value: Smith
 1) You need to use an if statement
 2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
 ```{python}
 def get_max ...
@@ -464,6 +471,11 @@ def get_max ...
   
 def get_char_count ...
    ...
+  
+  
+# ~~~~ do not change the code below this line ~~~~
+print( get_max(5, 33) )
+print( get_char_count('test sentence') )
 ```
 `@solution`
 ```{python}
@@ -488,16 +500,13 @@ def get_char_count(string):
         
   return max_count
 
-def my_power(x):
-    print("calculating sqrt...")
-    return(x * x)
+# ~~~~ do not change the code below this line ~~~~
+print( get_max(5, 33) )
+print( get_char_count('test sentence') )
 ```
 `@sct`
 ```{python}
-Ex().check_function_def('my_power').multi(
-    check_call("f(3)").has_equal_value()
-    check_call("f(3)").has_equal_output()
-)
+Ex().has_equal_output()
 ```
 ---
 
