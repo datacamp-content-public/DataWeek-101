@@ -76,58 +76,6 @@ Ex().has_equal_output()
 ```
 ---
 
-## Load
-
-```yaml
-type: NormalExercise 
-xp: 100 
-key: bb5f8f9d23   
-```
-
-
-In most cases, you will not create your own dataframe, but you will load it from file.
-Pandas as multiple functions to do that, the most popular one is `read_csv()`.
-```
-df = pd.read_csv("some_file.csv")
-```
-
-
-`@instructions`
-
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-import pandas as pd
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
-```
-
-`@sample_code`
-
-```{python}
-
-```
-
-
-`@solution`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
-
----
-
 ## Attributes and Methods
 
 ```yaml
@@ -153,12 +101,12 @@ Also strings and integer/floats have methods
 ```
 s = "hello"
 print( s.upper() )    #prints HELLO
-print( s.title() )      print Hello
+print( s.title() )      #prints Hello
 ```
 
 
 `@instructions`
-Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `bedrooms`.
+
 
 `@hint`
 
@@ -177,6 +125,56 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 from IPython.display import display, HTML
 print(df.head())
 ```
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
+## Load
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: bb5f8f9d23   
+```
+
+
+In most cases, you will not create your own dataframe, but you will load it from file.
+Pandas as multiple functions to do that, the most popular one is `read_csv()`.
+```
+df = pd.read_csv("some_file.csv")
+```
+
+
+`@instructions`
+Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `bedrooms`.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
+```
+`@sample_code`
+
+```{python}
+
+```
+
+
 `@solution`
 
 ```{python}
