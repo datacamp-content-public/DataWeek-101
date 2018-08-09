@@ -337,7 +337,7 @@ For example, to count the number of rows in each group:
 ```
 df.groupby('zipcode').count()
 ```
-will return something like this
+will return **a new dataframe** looking something like this
 ```
         bathrooms  bedrooms  finishedsqft  neighborhood  totalrooms  \
 zipcode                                                                
@@ -364,7 +364,7 @@ Functions like `sum`, `mean` and `median` also work after groupby.
 
 
 `@instructions`
-Find the average house price (last sold) by neighbourhood.
+Find the average house price (last sold) by neighborhood. Find the neighborhood with the highest average price.
 
 `@hint`
 
@@ -395,7 +395,7 @@ import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
-average_price_by_nh = df.groupby("neighbourhood")['lastsoldprice'].mean()
+average_price_by_nh = df.groupby("neighborhood")['lastsoldprice'].mean()
 
 print(average_price_by_nh)
 ```
