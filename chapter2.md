@@ -328,16 +328,18 @@ key: 682c9ba658
 ```
 
 
-You can group data by column values using the `groupby()` method.
+Groupby essentially splits the data into different groups depending on a variable of your choice.  
+###You can group data by column values using the `groupby()` method.
 ```
 df.groupby('zipcode')
 ```
-In most cases, after grouping your data you'll want to perform some kind of **aggregation**.
+Functions like `max()`, `min()`, `mean()`, `first()`, `last()` or `count()` can be quickly applied to the GroupBy object to obtain summary statistics for each group.
 For example, to count the number of rows in each group:
 ```
-df.groupby('zipcode').count()
+grouped = df.groupby('zipcode')
+grouped.count()
 ```
-will return **a new dataframe** looking something like this
+the aggregation will return **a new dataframe** looking something like this
 ```
         bathrooms  bedrooms  finishedsqft  neighborhood  totalrooms  \
 zipcode                                                                
@@ -424,7 +426,7 @@ key: 5bcb93fc18
 ```
 
 
-
+You can also
 
 
 `@instructions`
