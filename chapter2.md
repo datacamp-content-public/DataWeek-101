@@ -212,5 +212,5 @@ print( df.head() )
 ```
 `@sct`
 ```{python}
-Ex().
+Ex().has_equal_output()
 ```
