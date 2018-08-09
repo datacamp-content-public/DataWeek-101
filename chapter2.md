@@ -167,20 +167,24 @@ key: c0823c10bd
 All data in a Python program is represented by **objects**. Even the core types we just saw (integer, strings, etc...) are special kinds of objects.
 We can think of an object as a container that can store specific _variables_ and _functions_. 
 _Variables_ associated with a specific object are called **attributes** and can be accessed with **dot-notation**.
-For example, to list the columns in the dataframe, you can use the `columns` attribute of the dataframe. 
+The dataframe `columns` attribute we just saw is an example of this: 
 ```
 list_of_columns = df.columns
 ```
 _Functions_ associated with a specific object are called **methods** and can be accessed with dot-notation as well. 
-An example is the dataframe method `head()`, which prints the first few rows of the dataframe:
+The dataframe method `head()` we just saw, which prints the first few rows of the dataframe, is an example of this:
 ```
 print( df.head() )    # prints the first few (5 by default) rows of df
 ```
-Also strings and integer/floats have methods
+Also strings, integer and floats have methods:
 ```
 s = "hello"
 print( s.upper() )      #prints HELLO
 print( s.title() )      #prints Hello
+a = 56.1
+print( a.is_integer() )   # prints False
+b = 50.0
+print( b.is_integer() )   # prints True
 ```
 
 
