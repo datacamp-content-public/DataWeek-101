@@ -495,12 +495,16 @@ def get_char_count(string):
         max_count = count[s]
         
   return max_count
+
+def my_power(x):
+    print("calculating sqrt...")
+    return(x * x)
 ```
 `@sct`
 ```{python}
-Ex().check_function_def('get_char_count').multi(
-    check_call("f('hello')").has_equal_value()
-    check_call("f('test')").has_equal_output()
+Ex().check_function_def('my_power').multi(
+    check_call("f(3)").has_equal_value()
+    check_call("f(3)").has_equal_output()
 )
 ```
 ---
