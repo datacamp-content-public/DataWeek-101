@@ -189,7 +189,8 @@ print( b.is_integer() )   # prints True
 
 
 `@instructions`
-
+Can you find a string method in the Python reference docs to split a sentence into words (split on whitespace)?
+[https://docs.python.org/3/library/stdtypes.html#string-methods]
 
 `@hint`
 
