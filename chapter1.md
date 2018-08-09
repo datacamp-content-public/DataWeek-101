@@ -523,7 +523,7 @@ A simple script in Python.
 
 
 `@instructions`
-Just try to guess what the script does. Once you're done, press "Run" and see what the script prints. You can press "Solution" to get a commented version of the script.
+Just try to guess what the script does. Once you're done, press `Run` and see what the script prints. Press `Show Answer` to get a commented version of the script.
 
 `@hint`
 
