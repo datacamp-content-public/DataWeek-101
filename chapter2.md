@@ -106,7 +106,6 @@ Run the code on the right to see the dataframe printed. After that, try to
 - print the list of all columns
 - print the third row 
 - print the column `bedrooms`
-- print the first few rows
 
 `@hint`
 You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
@@ -123,13 +122,12 @@ You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
-print(df)
+print(df.head())
 
 #~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 # print the list of all columns
 # print the third row 
 # print the column `bedrooms`
-# print the first few rows 
 ```
 `@solution`
 
@@ -137,18 +135,16 @@ print(df)
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
-print(df)
+print(df.head())
 
 #~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 # print the list of all columns
 # print the third row 
 # print the column `bedrooms`
-# print the first few rows 
 
 print( df.columns )
 print( df.iloc[2] )
 print( df['bedrooms'] )
-print( df.head() )
 ```
 
 `@sct`
