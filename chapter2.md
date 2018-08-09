@@ -319,7 +319,7 @@ Ex().check_object('median_price').has_equal_value()
 
 ---
 
-## GroupBy
+## GroupBy /1
 
 ```yaml
 type: NormalExercise 
@@ -332,7 +332,7 @@ You can group data by column values using the `groupby()` method.
 ```
 df.groupby('zipcode')
 ```
-This operation on its own doesn't produce any meaningful result, it always need to be followed by some kind of **aggregation**, i.e. we need to tell pandas what to do "by group".
+In most cases, after grouping your data you'll want to perform some kind of **aggregation**.
 For example, to count the number of rows in each group:
 ```
 df.groupby('zipcode').count()
@@ -405,6 +405,54 @@ highest_average_price = average_price_by_nh.max()
 print(average_price_by_nh)
 print("The highest average price is {}".format(highest_average_price))
 ```
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
+## Groupby /2
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 5bcb93fc18   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
 
 `@sct`
 
