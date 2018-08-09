@@ -429,12 +429,15 @@ Some useful things to know:
 - You can loop over dictionary keys:
 ``` mydict = { 'name' : 'John', 'surname': 'Smith' }
 for key in mydict:
-    print("key: ", key, "value: ", mydict[key])
+    print("key: ", key)
+    print("value: ", mydict[key])
 ```
 will print 
 ```
-key: name value: John
-key: surname value: Smith
+key: name 
+value: John
+key: surname 
+value: Smith
 ```
 
 `@hint`
