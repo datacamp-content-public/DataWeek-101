@@ -466,14 +466,24 @@ value: Smith
 
 `@sample_code`
 ```{python}
-def get_max ...
-  ...
+#def get_max ...
+#  ...
   
-def get_char_count ...
-   ...
+#def get_char_count ...
+#   ...
+  
+def shout_echo(word1, echo=1):
+    echo_word = word1 * echo
+    shout_words = echo_word + '!!!'
+    return shout_words
 ```
 `@solution`
 ```{python}
+def shout_echo(word1, echo=1):
+    echo_word = word1 * echo
+    shout_words = echo_word + '!!!'
+    return shout_words
+  
 def get_max(a, b):
   if a > b:
     return a
@@ -497,7 +507,19 @@ def get_char_count(string):
 ```
 `@sct`
 ```{python}
-Ex().check_function_def('get_char_count').check_correct(check_call("f('hello')".has_equal_value()))
+#Ex().check_function_def('get_char_count').check_correct(check_call("f('hello')".has_equal_value()))
+Ex().check_function_def('shout_echo').check_correct(
+    multi(
+        check_call("f('hey', 3)".has_equal_value(),
+        check_call("f('hi', 2)".has_equal_value(),
+        check_call("f('hi')".has_equal_value()
+    ),
+    check_body().set_context('test', 1).multi(
+        has_equal_value(name = 'echo_word'),
+        has_equal_value(name = 'shout_words')
+    )
+)
+
 ```
 ---
 
