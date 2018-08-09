@@ -422,7 +422,20 @@ Let's try to write a few functions using what we learnt so far.
 1) Write a function `get_max` that returns the max of two numbers
 2) Write a function `get_char_count` that take a sentence and returns the number of times the most frequent character appears
    e.g. `char_count("Hello Python")` would return 2, cause `o` appears 2 times and no other character appears more frequently
-           `char_count("ahahaha")` would return 4, cause `a` appears 4 times and h only 3
+           `char_count("aaaaab")` would return 5, cause `a` appears 5 times and `b` only 1
+
+Some useful things to know:
+- To create a new empty dictionary, you can do `mydict = dict()` (you need to create an empty dictionary if you want to add keys to it at a later time)
+- You can loop over dictionary keys:
+``` mydict = { 'name' : 'John', 'surname': 'Smith' }
+for key in mydict:
+    print("key: ", key, "value: ", mydict[key])
+```
+will print 
+```
+key: name value: John
+key: surname value: Smith
+```
 
 `@hint`
 
