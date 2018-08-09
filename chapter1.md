@@ -441,7 +441,8 @@ value: Smith
 ```
 
 `@hint`
-
+1) You need to use an if statement
+2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
 `@pre_exercise_code`
 
