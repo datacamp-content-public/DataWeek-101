@@ -498,7 +498,6 @@ def get_char_count(string):
 ```
 `@sct`
 ```{python}
-#Ex().check_function_def('get_char_count').check_correct(check_call("f('hello')".has_equal_value()))
 Ex().check_function_def('get_char_count').multi(
     check_call("f('hello')").has_equal_value()
     check_call("f('test')").has_equal_output()
