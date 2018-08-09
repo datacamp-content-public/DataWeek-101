@@ -87,8 +87,8 @@ key: c0823c10bd
 
 When a dataframe is created, a few variables are automatically created. 
 
-All data in a Python program is represented by **objects**. Even the types we just saw (integer, strings, etc...) are special kinds of objects.
-We can think of an object as a container that can store specific variables and functions. 
+All data in a Python program is represented by **objects**. Even the core types we just saw (integer, strings, etc...) are special kinds of objects.
+We can think of an object as a container that can store specific _variables_ and _functions_. 
 _Variables_ associated with a specific object are called **attributes** and can be accessed with **dot-notation**.
 For example, to list the columns in the dataframe, you can use the `columns` attribute of the dataframe. 
 ```
@@ -159,25 +159,42 @@ Pandas as multiple functions to do that, the most popular one is `read_csv()`.
 df = pd.read_csv("some_file.csv")
 ```
 
+To list the columns in the dataframe, you can use the `columns` **attribute**.
+```
+list_of_columns = df.columns
+```
+To print the first few rows of the dataframe, you can use the `head()` **method**:
+```
+print( df.head() )    # prints the first few (5 by default) rows of df
+```
+
 
 `@instructions`
-Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `bedrooms`.
+Run the code on the right to see the dataframe printed. After that, try to
+- print the list of all columns
+- print the third row 
+- print the column `bedrooms`
+- print the first few rows
 
 `@hint`
 
 
 `@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
 ```{python}
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
+print(df)
+
+
 ```
-`@sample_code`
-
-```{python}
-
-```
-
-
 `@solution`
 
 ```{python}
