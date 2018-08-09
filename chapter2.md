@@ -87,11 +87,23 @@ key: c0823c10bd
 
 In most cases, you will not create your own dataframe, but you will load it from file.
 Pandas as multiple functions to do that, the most popular one is `read_csv()`.
-Let's see how it works.
+```
+df = pd.read_csv("some_file.csv")
+```
+To list the columns in the dataframe, you can use the `columns` **attribute** of the dataframe. 
+Attributes are variables associated with a specific type (or better **object**) and can be accessed with dot-notation:
+```
+list_of_columns = df.columns
+```
+Functions associated with a specific object are called **methods** and can be accessed with dot-notation as well. 
+An example is the dataframe method `head()`, which prints the first few rows of the dataframe:
+```
+print( df.head() )
+```
 
 
 `@instructions`
-
+Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `bedrooms`.
 
 `@hint`
 
