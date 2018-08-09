@@ -400,6 +400,7 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 average_price_by_nh = df.groupby("neighborhood")['lastsoldprice'].mean()
 most_expensive_nh = average_price_by_nh.max()
 print(average_price_by_nh)
+print("The neighborhood with the highest average price is {}".format(most_expensive_nh))
 ```
 
 `@sct`
