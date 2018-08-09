@@ -76,12 +76,12 @@ Ex().has_equal_output()
 ```
 ---
 
-## Load a CSV
+## Load
 
 ```yaml
 type: NormalExercise 
 xp: 100 
-key: c0823c10bd   
+key: bb5f8f9d23   
 ```
 
 
@@ -90,6 +90,53 @@ Pandas as multiple functions to do that, the most popular one is `read_csv()`.
 ```
 df = pd.read_csv("some_file.csv")
 ```
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
+```
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
+## Attributes and Methods
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: c0823c10bd   
+```
+
+
 To list the columns in the dataframe, you can use the `columns` **attribute** of the dataframe. 
 Attributes are variables associated with a specific type (or better **object**) and can be accessed with dot-notation:
 ```
@@ -135,23 +182,3 @@ print(df.head())
 
 ```
 
-
----
-
-## Insert exercise title here
-
-```yaml
-type: NormalExercise 
-xp: 100 
-key: bb5f8f9d23   
-```
-
-
-
-
-
-`@pre_exercise_code`
-```{python}
-import pandas as pd
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
-```
