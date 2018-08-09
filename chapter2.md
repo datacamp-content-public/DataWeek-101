@@ -137,15 +137,23 @@ key: c0823c10bd
 ```
 
 
-To list the columns in the dataframe, you can use the `columns` **attribute** of the dataframe. 
-Attributes are variables associated with a specific type (or better **object**) and can be accessed with dot-notation:
+All data in a Python program is represented by **objects**. Even the types we just saw (integer, strings, etc...) are special kinds of objects.
+We can think of an object as a container that can store specific variables and functions. 
+_Variables_ associated with a specific object are called **attributes** and can be accessed with **dot-notation**.
+For example, to list the columns in the dataframe, you can use the `columns` attribute of the dataframe. 
 ```
 list_of_columns = df.columns
 ```
-Functions associated with a specific object are called **methods** and can be accessed with dot-notation as well. 
+_Functions_ associated with a specific object are called **methods** and can be accessed with dot-notation as well. 
 An example is the dataframe method `head()`, which prints the first few rows of the dataframe:
 ```
 print( df.head() )
+```
+Also strings and integer/floats have methods
+```
+s = "hello"
+print( s.upper() )    #prints HELLO
+print( s.title() )      print Hello
 ```
 
 
