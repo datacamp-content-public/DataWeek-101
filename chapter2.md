@@ -36,7 +36,7 @@ print( df.iloc[2] )
 
 
 `@instructions`
-
+Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `nr_of_bedrooms`
 
 `@hint`
 
@@ -55,8 +55,6 @@ mydict = { 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000
 df = pd.DataFrame(mydict)
 print(df)
 
-print( df['nr_of_bedrooms'] )
-print( df.iloc[2] )
 ```
 `@solution`
 ```{python}
@@ -66,11 +64,8 @@ mydict = { 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000
 df = pd.DataFrame(mydict)
 print(df)
 
-print( df['nr_of_bedrooms'] )
 print( df.iloc[2] )
-#df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
-#from IPython.display import display, HTML
-#print(df.head())
+print( df['nr_of_bedrooms'] )
 ```
 `@sct`
 ```{python}
