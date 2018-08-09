@@ -76,6 +76,89 @@ Ex().has_equal_output()
 ```
 ---
 
+## Load
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: bb5f8f9d23   
+```
+
+
+In most cases, you will not create your own dataframe, but you will load it from file.
+Pandas as multiple functions to do that, the most popular one is `read_csv()`.
+```
+df = pd.read_csv("some_file.csv")
+```
+
+To list the columns in the dataframe, you can use the `columns` **attribute**.
+```
+list_of_columns = df.columns
+```
+To print the first few rows of the dataframe, you can use the `head()` **method**:
+```
+print( df.head() )    # prints the first few (5 by default) rows of df
+```
+
+
+`@instructions`
+Run the code on the right to see the dataframe printed. After that, try to
+- print the list of all columns
+- print the third row 
+- print the column `bedrooms`
+- print the first few rows
+
+`@hint`
+You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
+print(df)
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+# print the list of all columns
+# print the third row 
+# print the column `bedrooms`
+# print the first few rows 
+```
+`@solution`
+
+```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
+print(df)
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+# print the list of all columns
+# print the third row 
+# print the column `bedrooms`
+# print the first few rows 
+
+print( df.columns )
+print( df.iloc[2] )
+print( df['bedrooms'] )
+print( df.head() )
+```
+
+`@sct`
+
+```{python}
+Ex().has_equal_output()
+```
+
+---
+
 ## Attributes and Methods
 
 ```yaml
@@ -141,76 +224,3 @@ print( df.head() )
 
 ```
 
-
----
-
-## Load
-
-```yaml
-type: NormalExercise 
-xp: 100 
-key: bb5f8f9d23   
-```
-
-
-In most cases, you will not create your own dataframe, but you will load it from file.
-Pandas as multiple functions to do that, the most popular one is `read_csv()`.
-```
-df = pd.read_csv("some_file.csv")
-```
-
-To list the columns in the dataframe, you can use the `columns` **attribute**.
-```
-list_of_columns = df.columns
-```
-To print the first few rows of the dataframe, you can use the `head()` **method**:
-```
-print( df.head() )    # prints the first few (5 by default) rows of df
-```
-
-
-`@instructions`
-Run the code on the right to see the dataframe printed. After that, try to
-- print the list of all columns
-- print the third row 
-- print the column `bedrooms`
-- print the first few rows
-
-`@hint`
-You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
-`@sample_code`
-```{python}
-import pandas as pd
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
-
-print(df)
-
-#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
-
-```
-`@solution`
-```{python}
-import pandas as pd
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
-
-print(df)
-
-#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
-
-print( df.columns )
-print( df.iloc[2] )
-print( df['bedrooms'] )
-print( df.head() )
-```
-`@sct`
-```{python}
-Ex().has_equal_output()
-```
