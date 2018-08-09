@@ -103,8 +103,9 @@ key: c0823c10bd
 
 `@sample_code`
 ```{python}
+import pandas as pd
 #df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/b85f45cd589d8b46cc45918eee46c77d8b08af23/house_data_zip.csv")
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 from IPython.display import display, HTML
 print(df.head())
 ```
