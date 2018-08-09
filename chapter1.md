@@ -457,13 +457,6 @@ value: Smith
 1) You need to use an if statement
 2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 ```{python}
 #def get_max ...
@@ -519,7 +512,6 @@ Ex().check_function_def('shout_echo').check_correct(
         has_equal_value(name = 'shout_words')
     )
 )
-
 ```
 ---
 
