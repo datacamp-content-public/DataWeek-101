@@ -457,13 +457,6 @@ value: Smith
 1) You need to use an if statement
 2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 ```{python}
 def get_max ...
@@ -524,16 +517,6 @@ A simple script in Python.
 
 `@instructions`
 Just try to guess what the script does. Once you're done, press `Run` and see what the script prints. Press `Show Answer` to get a commented version of the script.
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
 
 `@sample_code`
 ```{python}
@@ -610,13 +593,6 @@ Change the code on the right to return the number of employees of KLM and Finnai
 `@hint`
 You need to change the list of companies
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
@@ -638,7 +614,6 @@ for c in companies:
     get_nr(c)
 ```
 `@solution`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -658,9 +633,7 @@ companies = ['KLM', 'Finnair']
 for c in companies:
     get_nr(c)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object("companies").has_equal_value()
 ```
