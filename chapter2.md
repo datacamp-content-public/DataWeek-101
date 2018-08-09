@@ -85,6 +85,8 @@ key: c0823c10bd
 ```
 
 
+When a dataframe is created, a few variables are automatically created. 
+
 All data in a Python program is represented by **objects**. Even the types we just saw (integer, strings, etc...) are special kinds of objects.
 We can think of an object as a container that can store specific variables and functions. 
 _Variables_ associated with a specific object are called **attributes** and can be accessed with **dot-notation**.
