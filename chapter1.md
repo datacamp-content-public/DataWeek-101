@@ -457,13 +457,6 @@ value: Smith
 1) You need to use an if statement
 2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
 ```{python}
 def get_max ...
@@ -495,13 +488,6 @@ def get_char_count(string):
         
   return max_count
 ```
-`@sct`
-
-```{python}
-
-```
-
-
 ---
 
 ## A simple script
@@ -540,7 +526,6 @@ for c in companies:
     get_nr(c)
 ```
 `@solution`
-
 ```{python}
 import urllib
 import re
@@ -557,13 +542,10 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 `@sct`
-
 ```{python}
 1
 ```
-
 ---
 
 ## A simple script /2
@@ -639,7 +621,6 @@ Change the code on the right to return the number of employees of KLM and Finnai
 You need to change the list of companies
 
 `@sample_code`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -659,9 +640,7 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 `@solution`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -681,9 +660,7 @@ companies = ['KLM', 'Finnair']
 for c in companies:
     get_nr(c)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object("companies").has_equal_value()
 ```
