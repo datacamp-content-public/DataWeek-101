@@ -364,7 +364,9 @@ The most common functions like `sum`, `mean` and `median`, `min` and `max` also 
 
 
 `@instructions`
-Find the average house price (last sold) by neighborhood. Find the neighborhood with the highest average price.
+Find the average house price (last sold) by neighborhood. What's the highest average price among all neighborhoods?
+
+Extra points: what is the most expensive neighborhood?
 
 `@hint`
 
@@ -398,9 +400,10 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = df.groupby("neighborhood")['lastsoldprice'].mean()
-most_expensive_nh = average_price_by_nh.max()
+highest_average_price = average_price_by_nh.max()
+
 print(average_price_by_nh)
-print("The neighborhood with the highest average price is {}".format(most_expensive_nh))
+print("The highest average price is {}".format(highest_average_price))
 ```
 
 `@sct`
