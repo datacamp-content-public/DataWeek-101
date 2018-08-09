@@ -291,6 +291,9 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 mean_nr_bedrooms = ...
 median_price = ...
+
+print( 'The average number of bedrooms is {:.2f}'.format(mean_nr_bedrooms) )
+print( 'The median house price is {:d}'.format(median_price) )
 ```
 
 `@solution`
@@ -303,6 +306,8 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 mean_nr_bedrooms = df['bedrooms'].mean()
 median_price = df['lastsoldprice'].median()
 
+print( 'The average number of bedrooms is {:.2f}'.format(mean_nr_bedrooms) )
+print( 'The median house price is {:d}'.format(median_price) )
 ```
 
 `@sct`
