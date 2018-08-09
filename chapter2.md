@@ -44,7 +44,7 @@ import pandas as pd
 
 mydict = { 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] }
 df = pd.DataFrame(mydict)
-
+print(df)
 #df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
 #from IPython.display import display, HTML
 #print(df.head())
