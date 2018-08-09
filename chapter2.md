@@ -76,7 +76,7 @@ Ex().has_equal_output()
 ```
 ---
 
-## Load
+## Load from CSV
 
 ```yaml
 type: NormalExercise 
@@ -240,3 +240,61 @@ print( S.split() )
 ```{python}
 Ex.has_equal_output()
 ```
+---
+
+## Simple operations
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 523b834f90   
+```
+
+
+Dataframes come with a series of methods that can act row-wise or column-wise. Most methods act column-wise by default.
+```
+df.sum()  
+df.cumsum()    # cumulative sum
+df.mean()    
+df.median()    
+```
+Some methods accept the argument `axis` to explicitly request to apply the function row-wise or column-wise.
+```
+df.sum(axis=0)
+df.sum(axis=1)
+```
+
+
+`@instructions`
+What is the average number of bedrooms? What is the median (last sold) price?
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
