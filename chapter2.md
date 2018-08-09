@@ -94,3 +94,50 @@ df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_h
 from IPython.display import display, HTML
 print(df.head())
 ```
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: bb5f8f9d23   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
+```
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
