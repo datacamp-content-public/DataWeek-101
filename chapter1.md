@@ -1,6 +1,6 @@
 ---
-  title: "Chapter 1"
-  description: ""
+title: 'Chapter 1'
+description: ""
 ---
 
 ## Variables
@@ -43,7 +43,6 @@ In this case: assign the value "Hello" to `x` and `5` to `y` and their product t
 `z = x *`
 
 `@sample_code`
-
 ```{python}
 x = 5                         # integers - this is a comment and starts with `#`
 y = True                      # booleans
@@ -66,9 +65,7 @@ y =
 z =  * 
 print()
 ```
-
 `@solution`
-
 ```{python}
 x = 5                         # integers - this is a comment and starts with `#`
 y = True                      # booleans
@@ -91,14 +88,11 @@ y = 5
 z = x * y
 print(z)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object('z').has_equal_value()
 #Ex().check_printout()
 ```
-
 ---
 
 ## Collections
@@ -128,7 +122,6 @@ a[ ... ] = ...
 b["..."] = "..."
 
 `@sample_code`
-
 ```{python}
 # a list
 a = [0, 1, 2, 3]
@@ -150,9 +143,7 @@ a
 # Change the 'name' key in b to Mary
 b
 ```
-
 `@solution`
-
 ```{python}
 # a list
 a = [0, 1, 2, 3]
@@ -174,14 +165,11 @@ a[0] = 7
 # Change the 'name' key in b to Mary
 b['name'] = 'Mary'
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
 ```
-
 ---
 
 ## if statements
@@ -215,7 +203,6 @@ Change the value of `a` so that the `else` clause is evaluated.
 `a` needs to be less than (or equal to) 0
 
 `@sample_code`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the value of `a` so that the `else` clause is evaluated.
@@ -230,9 +217,7 @@ else:
 
 print(b)
 ```
-
 `@solution`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the value of `a` so that the `else` clause is evaluated.
@@ -247,13 +232,10 @@ else:
 
 print(b)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object("b").has_equal_value()
 ```
-
 ---
 
 ## Loops
@@ -297,18 +279,7 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 `@instructions`
 Print all the numbers lower than 10 in the list `my_numbers`
 
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
 `@sample_code`
-
 ```{python}
 total = 0
 my_list = [2, 4, 6]
@@ -325,9 +296,7 @@ for ...
     ...
         print(n)
 ```
-
 `@solution`
-
 ```{python}
 total = 0
 my_list = [2, 4, 6]
@@ -343,16 +312,11 @@ my_numbers = [2, 4, 10, 11, 30, 44, 55, 78]
 for n in my_numbers:
     if n > 10:
         print(n)
-
-
 ```
-
 `@sct`
-
 ```{python}
 Ex().has_code("if.*>\s*10\s*:", not_typed_msg="you didn't use the right if statement")
 ```
-
 ---
 
 ## Functions
@@ -392,7 +356,6 @@ Write a function that takes three numbers, converts them to boolean and sums the
 Print the outcome. What do you notice?
 
 `@sample_code`
-
 ```{python}
 def sum_two_numbers(a, b):
   return a+b
@@ -414,9 +377,7 @@ def ...
 result = ... (12, 30, 55)
 print("result is ",result)
 ```
-
 `@solution`
-
 ```{python}
 def sum_two_numbers(a, b):
   return a+b
@@ -439,13 +400,10 @@ def sum_of_bool(a, b, c):
 result = sum_of_bool(12, 30, 55)
 print("result is ", result)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object("result").has_equal_value()
 ```
-
 ---
 
 ## A simple script
@@ -467,7 +425,6 @@ Just try to guess what the script does. Once you're done, press "Run" and see wh
 Has something to do with Wikipedia and airlines ...
 
 `@sample_code`
-
 ```{python}
 import urllib
 import re
@@ -484,9 +441,7 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 `@solution`
-
 ```{python}
 import urllib
 import re
@@ -503,13 +458,10 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 `@sct`
-
 ```{python}
 1
 ```
-
 ---
 
 ## A simple script /2
@@ -531,7 +483,6 @@ Just look at the code and the explanation of what every line does. Press `Submit
 You don't need to do anything.
 
 `@sample_code`
-
 ```{python}
 # we import two external packages
 import urllib
@@ -565,7 +516,6 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 ---
 
 ## A simple script /3
@@ -587,7 +537,6 @@ Change the code on the right to return the number of employees of KLM and Finnai
 You need to change the list of companies
 
 `@sample_code`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -607,9 +556,7 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
-
 `@solution`
-
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -629,9 +576,7 @@ companies = ['KLM', 'Finnair']
 for c in companies:
     get_nr(c)
 ```
-
 `@sct`
-
 ```{python}
 Ex().check_object("companies").has_equal_value()
 ```
