@@ -523,10 +523,17 @@ A simple script in Python.
 
 
 `@instructions`
-Just try to guess what the script does. Once you're done, press "Run" and see what the script prints.
+Just try to guess what the script does. Once you're done, press "Run" and see what the script prints. You can press "Solution" to get a commented version of the script.
 
 `@hint`
-Has something to do with Wikipedia and airlines ...
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 ```{python}
@@ -547,18 +554,35 @@ for c in companies:
 ```
 `@solution`
 ```{python}
+# we import two external packages
 import urllib
 import re
     
 def get_nr(company_name):
-	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
-	html = r.read().decode('utf-8')
-	html = re.sub(r'<[^>]+>', '', html)
-	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
-	emp = match[0].replace('\n',': ').strip()
-	print(company_name, emp)
+    # this is another way of formatting strings using {} as a placeholder that is filled with
+    # the arguments of format()
+    page = 'https://en.wikipedia.org/wiki/{}'.format(company_name)
+    
+    # we use the function urlopen() from the request sub-package in urllib
+    r = urllib.request.urlopen(page)
+    
+    # we read and decode the html from the page
+    html = r.read().decode('utf-8')
+    
+    # we use regular expressions (the re package) to strip all html tags 
+    html = re.sub(r'<[^>]+>', '', html)
+    
+    # we find all the occurrences in the page of the word "Employees" followed by a number
+    match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+    
+    # we get the first match, remove the newline and replace it with a colon, and print
+    emp = match[0].replace('\n',': ').strip()
+    print(company_name, emp)
 	
+# we list all the companies 
 companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', 'Qantas']
+
+# we run the function for each element of the list (the companies)
 for c in companies:
     get_nr(c)
 ```
