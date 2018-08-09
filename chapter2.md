@@ -193,18 +193,24 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 
 print(df)
 
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 
 ```
 `@solution`
-
 ```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
+print(df)
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+
+print( df.columns )
+print( df.iloc[2] )
+print( df['bedrooms'] )
+print( df.head() )
 ```
-
-
 `@sct`
-
 ```{python}
-
+Ex().
 ```
-
