@@ -291,7 +291,13 @@ What is the average number of bedrooms? What is the median (last sold) price?
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
-df.sum()
+df.sum()  
+df.cumsum()    # cumulative sum
+df.mean()    
+df.median()    
+
+df.sum(axis=0)
+df.sum(axis=1)
 ```
 
 `@sct`
