@@ -216,8 +216,6 @@ print( s.title() )      #prints Hello
 
 
 `@sct`
-
 ```{python}
-
+1
 ```
-
