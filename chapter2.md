@@ -90,8 +90,7 @@ We can think of an object as a container that can store specific variables and f
 _Variables_ associated with a specific object are called **attributes** and can be accessed with **dot-notation**.
 For example, to list the columns in the dataframe, you can use the `columns` attribute of the dataframe. 
 ```
-df = pd.DataFrame( {'bedrooms': [1,2}, 'bathrooms': [1,1] )
-print( df.columns )      # prints ['bedrooms', 'bathrooms']
+list_of_columns = df.columns
 ```
 _Functions_ associated with a specific object are called **methods** and can be accessed with dot-notation as well. 
 An example is the dataframe method `head()`, which prints the first few rows of the dataframe:
@@ -122,6 +121,7 @@ print( s.title() )      #prints Hello
 `@sample_code`
 ```{python}
 import pandas as pd
+df = pd.DataFrame{ 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] }
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 from IPython.display import display, HTML
 print(df.head())
