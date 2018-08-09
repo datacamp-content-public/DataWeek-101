@@ -466,9 +466,10 @@ def get_max(a, b):
 def get_char_count(string):
   count = dict()
   for s in string:
-    count[s] = 0
-  for s in string:
-    count[s] += 1
+    if s in count:
+      count[s] += 1
+    else:
+      count[s] = 1
     
   max_count = 0
   for s in count:
