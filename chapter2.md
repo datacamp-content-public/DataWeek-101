@@ -202,12 +202,15 @@ print( b.is_integer() )   # prints True
 
 
 `@sample_code`
-
 ```{python}
-
+s = "hello"
+print( s.upper() )      #prints HELLO
+print( s.title() )      #prints Hello
+a = 56.1
+print( a.is_integer() )   # prints False
+b = 50.0
+print( b.is_integer() )   # prints True
 ```
-
-
 `@solution`
 
 ```{python}
