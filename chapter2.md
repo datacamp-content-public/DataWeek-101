@@ -412,39 +412,3 @@ print("The highest average price is {}".format(highest_average_price))
 
 ```
 
-
----
-
-## Insert exercise title here
-
-```yaml
-type: MultipleChoiceExercise 
-xp: 50 
-key: e3d6c537b2   
-```
-
-
-
-
-
-`@instructions`
-- Sea Cliff
-- [SoMa]
-- Other
-
-`@hint`
-
-
-`@pre_exercise_code`
-
-```{python}
-
-```
-
-
-`@sct`
-
-```{python}
-
-```
-
