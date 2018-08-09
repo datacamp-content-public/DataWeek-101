@@ -406,6 +406,67 @@ Ex().check_object("result").has_equal_value()
 ```
 ---
 
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 026f006840   
+```
+
+
+Let's try to write a few functions using what we learnt so far.
+
+
+`@instructions`
+1) Write a function `get_max` that returns the max of two numbers
+2) Write a function `get_char_count` that take a sentence and returns the number of times the most frequent character appears
+   e.g. `char_count("Hello Python")` would return 2, cause `o` appears 2 times and no other character appears more frequently
+           `char_count("ahahaha")` would return 4, cause `a` appears 4 times and h only 3
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+```{python}
+def get_max ...
+  ...
+  
+def get_char_count ...
+   ...
+```
+`@solution`
+```{python}
+def get_max(a, b):
+  if a > b:
+    return a
+  else:
+    return b
+  
+def get_char_count(string):
+  count = dict()
+  for s in string:
+    count[s] += 1
+    
+  z = list(count)
+  return get_max(z)
+```
+`@sct`
+
+```{python}
+
+```
+
+
+---
+
 ## A simple script
 
 ```yaml
@@ -442,6 +503,7 @@ for c in companies:
     get_nr(c)
 ```
 `@solution`
+
 ```{python}
 import urllib
 import re
@@ -458,10 +520,13 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
+
 `@sct`
+
 ```{python}
 1
 ```
+
 ---
 
 ## A simple script /2
@@ -537,6 +602,7 @@ Change the code on the right to return the number of employees of KLM and Finnai
 You need to change the list of companies
 
 `@sample_code`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -556,7 +622,9 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
+
 `@solution`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -576,7 +644,9 @@ companies = ['KLM', 'Finnair']
 for c in companies:
     get_nr(c)
 ```
+
 `@sct`
+
 ```{python}
 Ex().check_object("companies").has_equal_value()
 ```
