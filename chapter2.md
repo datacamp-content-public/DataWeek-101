@@ -429,7 +429,7 @@ key: e3d6c537b2
 
 `@instructions`
 - Sea Cliff
-[- SoMa]
+- [SoMa]
 - Other
 
 `@hint`
