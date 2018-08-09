@@ -260,8 +260,12 @@ df.median()
 ```
 Some methods accept the argument `axis` to explicitly request to apply the function row-wise or column-wise.
 ```
-df.sum(axis=0)
-df.sum(axis=1)
+df.sum(axis=0)    # sum over rows (returns 1 result for each column)
+df.sum(axis=1)    # sum over columns (return 1 results for each row)
+```
+To apply the function to one column:
+```
+df['bathrooms'].sum() 
 ```
 
 
@@ -290,14 +294,9 @@ What is the average number of bedrooms? What is the median (last sold) price?
 ```{python}
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+ 
 
-df.sum()  
-df.cumsum()    # cumulative sum
-df.mean()    
-df.median()    
 
-df.sum(axis=0)
-df.sum(axis=1)
 ```
 
 `@sct`
