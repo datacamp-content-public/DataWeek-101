@@ -453,10 +453,16 @@ def get_max(a, b):
 def get_char_count(string):
   count = dict()
   for s in string:
+    count[s] = 0
+  for s in string:
     count[s] += 1
     
-  z = list(count)
-  return get_max(z)
+  max_count = 0
+  for s in count:
+    if count[s] > max_count:
+        max_count = count[s]
+        
+  return max_count
 ```
 `@sct`
 
