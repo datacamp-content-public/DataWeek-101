@@ -360,7 +360,7 @@ zipcode
 94104.0      1
 94105.0    340
 ```
-Functions like `sum`, `mean` and `median` also work after groupby.
+The most common functions like `sum`, `mean` and `median`, `min` and `max` also work after groupby.
 
 
 `@instructions`
@@ -384,8 +384,10 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = ...
+most_expensive_nh = ...
 
 print(average_price_by_nh)
+print("The neighborhood with the highest average price is {}".format(most_expensive_nh))
 ```
 
 `@solution`
@@ -396,7 +398,7 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = df.groupby("neighborhood")['lastsoldprice'].mean()
-
+most_expensive_nh = average_price_by_nh.max()
 print(average_price_by_nh)
 ```
 
