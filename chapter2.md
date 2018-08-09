@@ -85,7 +85,9 @@ key: c0823c10bd
 ```
 
 
-
+In most cases, you will not create your own dataframe, but you will load it from file.
+Pandas as multiple functions to do that, the most popular one is `read_csv()`.
+Let's see how it works.
 
 
 `@instructions`
