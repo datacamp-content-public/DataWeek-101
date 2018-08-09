@@ -426,7 +426,8 @@ Let's try to write a few functions using what we learnt so far.
 
 Some useful things to know:
 - Strings behave like lists (of characters), so you can loop over a list to get its characters
-```for char in "Hello":
+```
+for char in "Hello":
     print(char)
 ```
 will print 
