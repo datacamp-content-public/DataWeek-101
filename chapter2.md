@@ -57,9 +57,6 @@ print(df)
 
 print( df['nr_of_bedrooms'] )
 print( df.iloc[2] )
-#df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
-#from IPython.display import display, HTML
-#print(df.head())
 ```
 `@solution`
 ```{python}
@@ -79,3 +76,51 @@ print( df.iloc[2] )
 ```{python}
 1
 ```
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: c0823c10bd   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+df = pd.read_csv("https://raw.githubusercontent.com/RuiChang123/Regression_for_house_price_estimation/master/final_data.csv")
+from IPython.display import display, HTML
+print(df.head())
+```
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
