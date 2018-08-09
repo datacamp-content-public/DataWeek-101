@@ -76,7 +76,7 @@ Ex().has_equal_output()
 ```
 ---
 
-## Insert exercise title here
+## Load a CSV
 
 ```yaml
 type: NormalExercise 
