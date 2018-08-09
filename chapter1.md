@@ -473,7 +473,7 @@ def get_char_count ...
    ...
   
   
-# ~~~~ do not change the code below this line ~~~~
+#~~~~~~~~~~~~~~~~~~ Do not change the code below this line ~~~~~~~~~~~~~~~~~~ 
 print( get_max(5, 33) )
 print( get_char_count('test sentence') )
 ```
@@ -500,7 +500,7 @@ def get_char_count(string):
         
   return max_count
 
-# ~~~~ do not change the code below this line ~~~~
+#~~~~~~~~~~~~~~~~~~ Do not change the code below this line ~~~~~~~~~~~~~~~~~~ 
 print( get_max(5, 33) )
 print( get_char_count('test sentence') )
 ```
