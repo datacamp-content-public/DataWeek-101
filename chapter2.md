@@ -384,6 +384,8 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = ...
+
+print(average_price_by_nh)
 ```
 
 `@solution`
@@ -394,6 +396,8 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = df.groupby("neighbourhood")['lastsoldprice'].mean()
+
+print(average_price_by_nh)
 ```
 
 `@sct`
