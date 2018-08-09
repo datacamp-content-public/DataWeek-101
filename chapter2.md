@@ -122,7 +122,7 @@ print( s.title() )      #prints Hello
 ```{python}
 import pandas as pd
 df = pd.DataFrame{ 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] }
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
 from IPython.display import display, HTML
 print(df.head())
 ```
@@ -167,7 +167,7 @@ Run the code on the right to see the dataframe printed. After that, try to print
 `@pre_exercise_code`
 ```{python}
 import pandas as pd
-df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/3d68eaa3f92eb7b5d049f1f9b9ed94854323df1d/house_data.csv")
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 ```
 `@sample_code`
 
