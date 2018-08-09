@@ -592,7 +592,7 @@ for c in companies:
 ```
 ---
 
-## A simple script /3
+## A simple script /2
 
 ```yaml
 type: NormalExercise 
@@ -609,6 +609,13 @@ Change the code on the right to return the number of employees of KLM and Finnai
 
 `@hint`
 You need to change the list of companies
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
 
 `@sample_code`
 ```{python}
