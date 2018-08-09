@@ -337,9 +337,28 @@ For example, to count the number of rows in each group:
 ```
 df.groupby('zipcode').count()
 ```
-will return
+will return something like this
 ```
-zipcode 
+        bathrooms  bedrooms  finishedsqft  neighborhood  totalrooms  \
+zipcode                                                                
+94102.0        318       318           318           318         318   
+94103.0        360       360           360           360         360   
+94104.0          1         1             1             1           1   
+94105.0        340       340           340           340         340 
+```
+Data is grouped by zipcode, and the count of rows for each columns are reported. We have 318 rows for zipcode 94102 in column bedrooms.
+Columns can have missing values, in that case the count can be different for each column.
+To perform the same operation on one column only:
+```
+df.groupby('zipcode')['bedrooms'].count()
+```
+will return 
+```
+zipcode
+94102.0    318
+94103.0    360
+94104.0      1
+94105.0    340
 ```
 
 
