@@ -285,9 +285,13 @@ What is the average number of bedrooms? What is the median (last sold) price?
 `@sample_code`
 
 ```{python}
-
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+ 
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+mean_nr_bedrooms = ...
+median_price = ...
 ```
-
 
 `@solution`
 
@@ -295,13 +299,15 @@ What is the average number of bedrooms? What is the median (last sold) price?
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
  
-
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+mean_nr_bedrooms = df['bedrooms'].mean()
+median_price = df['lastsoldprice'].median()
 
 ```
 
 `@sct`
 
 ```{python}
-
+Ex().check_object('mean_nr_bedrooms').has_equal_value()
+Ex().check_object('median_price').has_equal_value()
 ```
-
