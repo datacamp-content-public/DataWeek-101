@@ -425,6 +425,18 @@ Let's try to write a few functions using what we learnt so far.
            `char_count("aaaaab")` would return 5, cause `a` appears 5 times and `b` only 1
 
 Some useful things to know:
+- Strings behave like lists (of characters), so you can loop over a list to get its characters
+```for char in "Hello":
+    print(char)
+```
+will print 
+```
+H
+e
+l
+l
+o
+```
 - To create a new empty dictionary, you can do `mydict = dict()` (you need to create an empty dictionary if you want to add keys to it at a later time)
 - You can loop over dictionary keys:
 ``` mydict = { 'name' : 'John', 'surname': 'Smith' }
