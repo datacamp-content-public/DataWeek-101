@@ -55,6 +55,7 @@ mydict = { 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000
 df = pd.DataFrame(mydict)
 print(df)
 
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 ```
 `@solution`
 ```{python}
@@ -63,6 +64,8 @@ import pandas as pd
 mydict = { 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] }
 df = pd.DataFrame(mydict)
 print(df)
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 
 print( df.iloc[2] )
 print( df['nr_of_bedrooms'] )
