@@ -406,7 +406,7 @@ Ex().check_object("result").has_equal_value()
 ```
 ---
 
-## Practise
+## Practise /1
 
 ```yaml
 type: NormalExercise 
