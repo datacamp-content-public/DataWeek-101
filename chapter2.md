@@ -211,15 +211,32 @@ a = 56.1
 print( a.is_integer() )   # prints False
 b = 50.0
 print( b.is_integer() )   # prints True
+
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Split the sentence in S into words (on whitespace) by replacing
+# <string-method> with the appropriate method
+
+S = "This is a sentence"
+print( S.<string-method>() )
 ```
 `@solution`
-
 ```{python}
+s = "hello"
+print( s.upper() )      #prints HELLO
+print( s.title() )      #prints Hello
+a = 56.1
+print( a.is_integer() )   # prints False
+b = 50.0
+print( b.is_integer() )   # prints True
 
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+# Split the sentence in S into words (on whitespace) by replacing
+# <string-method> with the appropriate method
+
+S = "This is a sentence"
+print( S.split() )
 ```
-
-
 `@sct`
 ```{python}
-1
+Ex.has_equal_output()
 ```
