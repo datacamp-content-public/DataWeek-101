@@ -177,7 +177,7 @@ Run the code on the right to see the dataframe printed. After that, try to
 - print the first few rows
 
 `@hint`
-
+You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
 
 `@pre_exercise_code`
 
