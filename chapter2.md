@@ -123,8 +123,8 @@ print( s.title() )      #prints Hello
 import pandas as pd
 df = pd.DataFrame{ 'nr_of_bedrooms' : [1, 2, 1, 3, 2, 4], 'house_price': [450000, 630000, 380000, 720000, 650000, 890000] }
 
-from IPython.display import display, HTML
-print(df.head())
+print( df.columns )
+print( df.head() )
 ```
 `@solution`
 
