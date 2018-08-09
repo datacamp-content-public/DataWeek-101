@@ -39,7 +39,7 @@ print( df.iloc[2] )
 Run the code on the right to see the dataframe printed. After that, try to print the third row and the column `nr_of_bedrooms`
 
 `@hint`
-
+You need to use `iloc` and the column name
 
 `@pre_exercise_code`
 ```{python}
@@ -72,7 +72,7 @@ print( df['nr_of_bedrooms'] )
 ```
 `@sct`
 ```{python}
-1
+Ex().has_equal_output()
 ```
 ---
 
