@@ -464,7 +464,7 @@ print("The highest average price is {}".format(highest_average_price))
 `@sct`
 
 ```{python}
-Ex().check_object('highest_average_price').has_equal_value()
+Ex().check_object("highest_average_price").has_equal_value()
 ```
 
 
