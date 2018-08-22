@@ -538,11 +538,16 @@ def list_options(group):
 
 print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
 
-#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 
+def list_of_zipcodes(group):
+  ...
+  
+nh_zipcode_lists = 
 
+nh_highest = 
 
-
+print("The neighborhood with the most zipcodes is {}".format(nh_highest))
 ```
 
 
