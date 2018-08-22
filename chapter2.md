@@ -666,3 +666,66 @@ plt.show()
 
 `@feedback`
 
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 4de5f8a98f   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
+
+df.groupby('bedrooms').mean().plot(use_index=True, y="lastsoldprice", kind="bar")
+df.groupby('bedrooms').std().plot(use_index=True, y="lastsoldprice")
+plt.show()
+
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
