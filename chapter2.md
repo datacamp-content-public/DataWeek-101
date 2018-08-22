@@ -605,10 +605,11 @@ To create a basic line plot
 df.plot()
 ```
 this will try to plot all columns against the index (row number).
-You can specify which columns to use with
+You can specify which columns to use and which type of plot
 ```
-df.plot(x="bedrooms", y="bathrooms")
+df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 ```
+The available plot types include: scatter, box, area, histogram, bar and more.
 
 
 `@instructions`
@@ -620,16 +621,18 @@ df.plot(x="bedrooms", y="bathrooms")
 `@pre_exercise_code`
 
 ```{python}
-import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
+
 ```
 
 
 `@sample_code`
 
 ```{python}
+import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+
+df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 ```
 
 
