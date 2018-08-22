@@ -414,7 +414,6 @@ zipcode
 94104.0      1
 94105.0    340
 ```
-The most common functions like `sum`, `mean` and `median`, `min` and `max` also work after groupby.
 
 
 `@instructions`
