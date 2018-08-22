@@ -515,7 +515,7 @@ df.groupby('zipcode')['bedrooms'].agg(list_options)
 
 
 `@instructions`
-
+Return the number of unique zipcodes for each neighborhood. Which is the neighborhood with the most zipcodes?
 
 `@hint`
 
@@ -533,11 +533,16 @@ df.groupby('zipcode')['bedrooms'].agg(list_options)
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
  
-#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 def list_options(group):
   return set(group.tolist())
 
 print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+
+
+
+
 ```
 
 
