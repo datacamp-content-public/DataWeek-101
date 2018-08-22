@@ -612,7 +612,7 @@ df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 The available plot types include: scatter, box, area, histogram, bar and more.
 To use the index as the `x` axis, you can pass `use_index=True`.
 
-In some cases, only the `y` variable need to be specified, e.g. with histograms:
+In some cases, when only one variable needs to be specified, this might be the `y` variable, e.g. with histograms:
 ```
 df.plot(kind="hist", y="bedrooms")
 ```
