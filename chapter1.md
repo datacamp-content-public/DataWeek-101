@@ -522,7 +522,7 @@ Ex().check_object("result").has_equal_value()
 
 ---
 
-## Practise /1
+## Practice /1
 
 ```yaml
 type: NormalExercise 

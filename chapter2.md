@@ -587,3 +587,57 @@ Ex().check_object("nh_highest").has_equal_value()
 
 `@feedback`
 
+
+---
+
+## Plotting
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 20e8fb8f8a   
+```
+
+
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
+`@sample_code`
+
+```{python}
+
+```
+
+
+`@solution`
+
+```{python}
+
+```
+
+
+`@sct`
+
+```{python}
+
+```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
