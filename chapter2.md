@@ -295,7 +295,7 @@ key: 523b834f90
 ```
 
 
-Dataframes come with a series of methods that can act row-wise or column-wise. Most methods act column-wise by default.
+Dataframes come with a series of methods that can act row-wise or column-wise. Most methods act row-wise by default (1 result for each column).
 ```
 df.sum()  
 df.cumsum()    # cumulative sum
