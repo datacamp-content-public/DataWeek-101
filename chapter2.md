@@ -439,10 +439,10 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 average_price_by_nh = ...
-most_expensive_nh = ...
+highest_average_price = ...
 
 print(average_price_by_nh)
-print("The neighborhood with the highest average price is {}".format(most_expensive_nh))
+print("The neighborhood with the highest average price is {}".format(highest_average_price))
 ```
 
 
@@ -464,7 +464,7 @@ print("The highest average price is {}".format(highest_average_price))
 `@sct`
 
 ```{python}
-
+Ex().check_object('highest_average_price').has_equal_value()
 ```
 
 
