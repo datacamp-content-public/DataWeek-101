@@ -540,7 +540,7 @@ print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
 
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 
-def list_of_zipcodes(group):
+def nr_unique_zipcodes(group):
   ...
   
 nh_zipcode_lists = 
@@ -564,10 +564,10 @@ print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
 
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 
-def list_of_zipcodes(group):
-  return set(group.tolist())
+def nr_unique_zipcodes(group):
+  return len(set(group.tolist()))
   
-nh_zipcode_lists = df.groupby('neighborhood')['zipcode'].agg(list_of_zipcodes)
+nh_zipcode_lists = df.groupby('neighborhood')['zipcode'].agg(nr_unique_zipcodes)
 
 nh_highest = nh_zipcode_lists.argmax()
 
