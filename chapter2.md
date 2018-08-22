@@ -578,7 +578,7 @@ print("The neighborhood with the most zipcodes is {}".format(nh_highest))
 `@sct`
 
 ```{python}
-
+Ex().check_object("nh_highest").has_equal_value()
 ```
 
 
