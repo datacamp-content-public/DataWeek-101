@@ -499,6 +499,10 @@ or for a single column
 df.groupby('zipcode')['bedrooms'].agg(['sum', 'mean'])
 ```
 
+This method is also useful when you want to apply your own aggregation function:
+```
+```
+
 
 `@instructions`
 
