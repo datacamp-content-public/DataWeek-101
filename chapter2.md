@@ -599,7 +599,16 @@ key: 20e8fb8f8a
 ```
 
 
-Pandas provide some standard plotting functions for quickly visualise your data.
+Pandas provide some standard plotting functions to quickly visualise your data.
+To create a basic line plot
+```
+df.plot()
+```
+this will try to plot all columns against the index (row number).
+You can specify which columns to use with
+```
+df.plot(x="bedrooms", y="bathrooms")
+```
 
 
 `@instructions`
