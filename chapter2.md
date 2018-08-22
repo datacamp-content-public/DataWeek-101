@@ -520,6 +520,10 @@ This method is also useful when you want to apply your own aggregation function:
 `@sample_code`
 
 ```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+ 
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 
 ```
 
