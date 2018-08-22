@@ -537,7 +537,7 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 def list_options(group):
   return set(group.tolist())
 
-
+print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
 ```
 
 
