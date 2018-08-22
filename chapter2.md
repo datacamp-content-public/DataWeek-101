@@ -611,7 +611,8 @@ Pandas provide some standard plotting functions for quickly visualise your data.
 `@pre_exercise_code`
 
 ```{python}
-
+import matplotlib.pyplot as plt
+plt.show()
 ```
 
 
