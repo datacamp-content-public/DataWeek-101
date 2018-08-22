@@ -703,12 +703,14 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 
 bedrooms_price = df[["bedrooms", "lastsoldprice"]]
 by_bedroom = bedrooms_price.groupby("bedrooms").agg(["mean", "std"])
-by_bedroom.columns = ["mean price", "error price"]
+by_bedroom.columns = ["mean price", "error"]
 
+by_bedroom["error"] = by_bedroom["error"].fillna(by_bedroom.error.max())
 #df.groupby('bedrooms').mean().plot(use_index=True, y="lastsoldprice", kind="bar")
 
 
-by_bedroom.plot(kind="bar", yerr="error price", y="mean price", use_index=True)
+by_bedroom.plot(kind="bar", yerr="error", y="mean price", use_index=True)
+plt.set_ylim([0,1e7])
 plt.show()
 
 
