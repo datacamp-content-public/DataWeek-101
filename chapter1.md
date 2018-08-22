@@ -343,7 +343,7 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 
 
 `@instructions`
-Print all the numbers lower than 10 in the list `my_numbers`
+Print all the numbers higher than 10 in the list `my_numbers`
 
 `@hint`
 
@@ -365,7 +365,7 @@ for item in my_list:
     print(total)
     
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
-# Print all the numbers lower than 10 in the list `my_numbers`
+# Print all the numbers higher than 10 in the list `my_numbers`
 
 my_numbers = [2, 4, 7, 8, 10, 11, 30, 44, 55, 78]
 
@@ -385,7 +385,7 @@ for item in my_list:
     print(total)
     
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
-# Print all the numbers lower than 10 in the list `my_numbers`
+# Print all the numbers higher than 10 in the list `my_numbers`
 
 my_numbers = [2, 4, 10, 11, 30, 44, 55, 78]
 
