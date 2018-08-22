@@ -612,7 +612,7 @@ Pandas provide some standard plotting functions for quickly visualise your data.
 
 ```{python}
 import matplotlib.pyplot as plt
-plt.show()
+fig, ax = plt.subplots()
 ```
 
 
