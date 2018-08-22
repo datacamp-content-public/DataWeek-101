@@ -488,11 +488,15 @@ key: 5bcb93fc18
 It is possible to perform multiple aggregations at the same time using the method `aggregate()` (or just `agg()` for short). 
 
 ```
-df['bedrooms'].agg([sum, mean])
+df.groupby('zipcode').agg(['sum', 'mean'])
 ```
-will print
+will return
 ```
 
+```
+or for a single column
+```
+df.groupby('zipcode')['bedrooms'].agg(['sum', 'mean'])
 ```
 
 
