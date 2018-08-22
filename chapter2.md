@@ -554,7 +554,24 @@ print("The neighborhood with the most zipcodes is {}".format(nh_highest))
 `@solution`
 
 ```{python}
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
+ 
+def list_options(group):
+  return set(group.tolist())
 
+print( df.groupby('zipcode')['bedrooms'].agg(list_options).head() )
+
+#~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
+
+def list_of_zipcodes(group):
+  return set(group.tolist())
+  
+nh_zipcode_lists = df.groupby('neighborhood')['zipcode'].agg(list_of_zipcodes)
+
+nh_highest = nh_zipcode_lists.argmax()
+
+print("The neighborhood with the most zipcodes is {}".format(nh_highest))
 ```
 
 
