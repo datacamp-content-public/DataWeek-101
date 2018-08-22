@@ -701,9 +701,14 @@ import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
+df2 = df[["bedrooms", "lastsoldprice"]]
+df2.groupby("bedrooms").agg(["mean", "std"])
+df2.columns = ["mean price", "error price"]
 
 df.groupby('bedrooms').mean().plot(use_index=True, y="lastsoldprice", kind="bar")
-df.groupby('bedrooms').std().plot(use_index=True, y="lastsoldprice")
+#df.groupby('bedrooms').std().plot(use_index=True, y="lastsoldprice")
+
+df2.plot(kind="bar", yerr="error price", y="mean price")
 plt.show()
 
 
