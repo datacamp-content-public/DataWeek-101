@@ -442,7 +442,7 @@ average_price_by_nh = ...
 highest_average_price = ...
 
 print(average_price_by_nh)
-print("The neighborhood with the highest average price is {}".format(highest_average_price))
+print("The highest average price is {}".format(highest_average_price))
 ```
 
 
