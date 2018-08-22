@@ -525,7 +525,7 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
  
 #~~~~~~~~~~~~~~~~~~ Complete the code below ~~~~~~~~~~~~~~~~~~
 def list_options(group):
-  return set(group.as_list())
+  return set(group.tolist())
 
 
 ```
