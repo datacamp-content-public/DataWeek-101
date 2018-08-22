@@ -676,7 +676,7 @@ def get_nr(company_name):
 	r = urllib.request.urlopen('https://en.wikipedia.org/wiki/{}'.format(company_name))
 	html = r.read().decode('utf-8')
 	html = re.sub(r'<[^>]+>', '', html)
-	match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+	match = re.findall(r'([e|E]mployees\n.?[\d\,\.]+)', html)
 	emp = match[0].replace('\n',': ').strip()
 	print(company_name, emp)
 	
@@ -708,7 +708,7 @@ def get_nr(company_name):
     html = re.sub(r'<[^>]+>', '', html)
     
     # we find all the occurrences in the page of the word "Employees" followed by a number
-    match = re.findall(r'([e|E]mployees\n.?[\d\,]+)', html)
+    match = re.findall(r'([e|E]mployees\n.?[\d\,\.]+)', html)
     
     # we get the first match, remove the newline and replace it with a colon, and print
     emp = match[0].replace('\n',': ').strip()
