@@ -635,7 +635,8 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 plt.show()
 
-
+df.groupby('bedrooms').mean().plot(x="index", y="lastsoldprice", kind="bar")
+plt.show()
 ```
 
 
