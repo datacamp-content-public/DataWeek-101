@@ -42,7 +42,15 @@ In this case: assign the value "Hello" to `x` and `5` to `y` and their product t
 `y = `
 `z = x *`
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 x = 5                         # integers - this is a comment and starts with `#`
 y = True                      # booleans
@@ -65,7 +73,10 @@ y =
 z =  * 
 print()
 ```
+
+
 `@solution`
+
 ```{python}
 x = 5                         # integers - this is a comment and starts with `#`
 y = True                      # booleans
@@ -88,11 +99,22 @@ y = 5
 z = x * y
 print(z)
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().check_object('z').has_equal_value()
 #Ex().check_printout()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Collections
@@ -121,7 +143,15 @@ Change the first element of `a` to 7 and the 'name' key in `b` to Mary
 a[ ... ] = ...
 b["..."] = "..."
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 # a list
 a = [0, 1, 2, 3]
@@ -143,7 +173,10 @@ a
 # Change the 'name' key in b to Mary
 b
 ```
+
+
 `@solution`
+
 ```{python}
 # a list
 a = [0, 1, 2, 3]
@@ -165,11 +198,22 @@ a[0] = 7
 # Change the 'name' key in b to Mary
 b['name'] = 'Mary'
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## if statements
@@ -202,7 +246,15 @@ Change the value of `a` so that the `else` clause is evaluated.
 `@hint`
 `a` needs to be less than (or equal to) 0
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the value of `a` so that the `else` clause is evaluated.
@@ -217,7 +269,10 @@ else:
 
 print(b)
 ```
+
+
 `@solution`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the value of `a` so that the `else` clause is evaluated.
@@ -232,10 +287,21 @@ else:
 
 print(b)
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().check_object("b").has_equal_value()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Loops
@@ -279,7 +345,18 @@ Note how `range(N)` create a list of length `N` from `0` to `N-1`
 `@instructions`
 Print all the numbers lower than 10 in the list `my_numbers`
 
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 total = 0
 my_list = [2, 4, 6]
@@ -296,7 +373,10 @@ for ...
     ...
         print(n)
 ```
+
+
 `@solution`
+
 ```{python}
 total = 0
 my_list = [2, 4, 6]
@@ -313,10 +393,21 @@ for n in my_numbers:
     if n > 10:
         print(n)
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().has_code("if.*>\s*10\s*:", not_typed_msg="you didn't use the right if statement")
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Functions
@@ -355,7 +446,18 @@ Complete the code on the right.
 Write a function that takes three numbers, converts them to boolean and sums them. Call the function with 12, 30, 55 as input and assign the output to the variable `result` (e.g. result = myfunc(12,30,55)) 
 Print the outcome. What do you notice?
 
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 def sum_two_numbers(a, b):
   return a+b
@@ -377,7 +479,10 @@ def ...
 result = ... (12, 30, 55)
 print("result is ",result)
 ```
+
+
 `@solution`
+
 ```{python}
 def sum_two_numbers(a, b):
   return a+b
@@ -400,10 +505,21 @@ def sum_of_bool(a, b, c):
 result = sum_of_bool(12, 30, 55)
 print("result is ", result)
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().check_object("result").has_equal_value()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Practise /1
@@ -457,7 +573,15 @@ value: Smith
 1) You need to use an if statement
 2) You can use a dictionary (no duplicates) to store the count while looping over the string
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 def get_max ...
   ...
@@ -470,7 +594,10 @@ def get_char_count ...
 print( get_max(5, 33) )
 print( get_char_count('test sentence') )
 ```
+
+
 `@solution`
+
 ```{python}
 def get_max(a, b):
   if a > b:
@@ -497,10 +624,21 @@ def get_char_count(string):
 print( get_max(5, 33) )
 print( get_char_count('test sentence') )
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().has_equal_output()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## A simple script
@@ -518,7 +656,18 @@ A simple script in Python.
 `@instructions`
 Just try to guess what the script does. Once you're done, press `Run` and see what the script prints. Press `Show Answer` to get a commented version of the script.
 
+`@hint`
+
+
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 import urllib
 import re
@@ -535,7 +684,10 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
+
+
 `@solution`
+
 ```{python}
 # we import two external packages
 import urllib
@@ -569,10 +721,21 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
+
+
 `@sct`
+
 ```{python}
 1
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## A simple script /2
@@ -593,7 +756,15 @@ Change the code on the right to return the number of employees of KLM and Finnai
 `@hint`
 You need to change the list of companies
 
+`@pre_exercise_code`
+
+```{python}
+
+```
+
+
 `@sample_code`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -613,7 +784,10 @@ companies = ['Ryanair', 'Easyjet', 'Air_France', 'Alitalia', 'Etihad_Airways', '
 for c in companies:
     get_nr(c)
 ```
+
+
 `@solution`
+
 ```{python}
 #~~~~~~~~~~~~~~~~~~ Change the code below ~~~~~~~~~~~~~~~~~~
 # Change the code to return the number of employees of KLM and Finnair (only)
@@ -633,7 +807,17 @@ companies = ['KLM', 'Finnair']
 for c in companies:
     get_nr(c)
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().check_object("companies").has_equal_value()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+

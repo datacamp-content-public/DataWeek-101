@@ -42,12 +42,16 @@ Run the code on the right to see the dataframe printed. After that, try to print
 You need to use `iloc` and the column name
 
 `@pre_exercise_code`
+
 ```{python}
 import pandas as pd
 
 pd.set_option('display.width', pd.util.terminal.get_terminal_size()[0])
 ```
+
+
 `@sample_code`
+
 ```{python}
 import pandas as pd
 
@@ -57,7 +61,10 @@ print(df)
 
 #~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 ```
+
+
 `@solution`
+
 ```{python}
 import pandas as pd
 
@@ -70,10 +77,21 @@ print(df)
 print( df.iloc[2] )
 print( df['nr_of_bedrooms'] )
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().has_equal_output()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Attributes and Methods [OPTIONAL]
@@ -124,6 +142,7 @@ Can you find a string method in the Python reference docs to split a sentence in
 
 
 `@sample_code`
+
 ```{python}
 s = "hello"
 print( s.upper() )      #prints HELLO
@@ -140,6 +159,8 @@ print( b.is_integer() )   # prints True
 S = "This is a sentence"
 print( S.<string-method>() )
 ```
+
+
 `@solution`
 
 ```{python}
@@ -159,11 +180,19 @@ S = "This is a sentence"
 print( S.split() )
 ```
 
+
 `@sct`
 
 ```{python}
 Ex.has_equal_output()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
 
 ---
 
@@ -209,6 +238,7 @@ You need to use `df.columns`, `df.iloc`, `df.head()` and `df[<column>]`
 
 
 `@sample_code`
+
 ```{python}
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
@@ -220,7 +250,10 @@ print(df.head())
 # print the third row 
 # print the column `bedrooms`
 ```
+
+
 `@solution`
+
 ```{python}
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
@@ -236,10 +269,21 @@ print( df.columns )
 print( df.iloc[2] )
 print( df['bedrooms'] )
 ```
+
+
 `@sct`
+
 ```{python}
 Ex().has_equal_output()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
+
 ---
 
 ## Simple operations
@@ -296,6 +340,7 @@ print( 'The average number of bedrooms is {:5.2f}'.format(mean_nr_bedrooms) )
 print( 'The median house price is {:8.0f}'.format(median_price) )
 ```
 
+
 `@solution`
 
 ```{python}
@@ -310,12 +355,20 @@ print( 'The average number of bedrooms is {:5.2f}'.format(mean_nr_bedrooms) )
 print( 'The median house price is {:8.0f}'.format(median_price) )
 ```
 
+
 `@sct`
 
 ```{python}
 Ex().check_object('mean_nr_bedrooms').has_equal_value()
 Ex().check_object('median_price').has_equal_value()
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
+
 
 ---
 
@@ -329,7 +382,6 @@ key: 682c9ba658
 
 
 Groupby essentially splits the data into different groups depending on a variable of your choice.  
-###You can group data by column values using the `groupby()` method.
 ```
 df.groupby('zipcode')
 ```
@@ -394,6 +446,7 @@ print(average_price_by_nh)
 print("The neighborhood with the highest average price is {}".format(most_expensive_nh))
 ```
 
+
 `@solution`
 
 ```{python}
@@ -408,11 +461,18 @@ print(average_price_by_nh)
 print("The highest average price is {}".format(highest_average_price))
 ```
 
+
 `@sct`
 
 ```{python}
 
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
 
 
 ---
@@ -461,4 +521,10 @@ You can also
 ```{python}
 
 ```
+
+
+`@possible_answers`
+
+
+`@feedback`
 
