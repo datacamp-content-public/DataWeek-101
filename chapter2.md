@@ -485,7 +485,15 @@ key: 5bcb93fc18
 ```
 
 
-You can also
+It is possible to perform multiple aggregations at the same time using the method `aggregate()` (or just `agg()` for short). 
+
+```
+df['bedrooms'].agg([sum, mean])
+```
+will print
+```
+
+```
 
 
 `@instructions`
