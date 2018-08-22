@@ -633,6 +633,9 @@ import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
 df.plot(x="bedrooms", y="bathrooms", kind="scatter")
+plt.show()
+
+
 ```
 
 
