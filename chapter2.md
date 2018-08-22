@@ -610,8 +610,6 @@ You can specify which columns to use and which type of plot
 df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 ```
 The available plot types include: scatter, box, area, histogram, bar and more.
-To use the index as the `x` axis, you can pass `use_index=True`.
-
 In some cases, when only one variable needs to be specified, this might be the `y` variable, e.g. with histograms:
 ```
 df.plot(kind="hist", y="bedrooms")
@@ -641,8 +639,8 @@ df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datas
 df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 plt.show()
 
-df.groupby('bedrooms').mean().plot(use_inde=True, y="lastsoldprice", kind="bar")
-plt.show()
+#df.groupby('bedrooms').mean().plot(use_inde=True, y="lastsoldprice", kind="bar")
+#plt.show()
 
 df.plot(kind="hist", y="bedrooms")
 plt.show()
