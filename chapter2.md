@@ -485,7 +485,7 @@ key: 5bcb93fc18
 ```
 
 
-It is possible to perform multiple aggregations at the same time using the method `aggregate()` (or just `agg()` for short). 
+You perform multiple aggregations at the same time using the method `aggregate()` (or just `agg()` for short). 
 
 ```
 df.groupby('zipcode').agg(['sum', 'mean'])
@@ -499,8 +499,18 @@ or for a single column
 df.groupby('zipcode')['bedrooms'].agg(['sum', 'mean'])
 ```
 
+You can also specify different aggregations for different columns (using the column name):
+```
+df.groupby('zipcode').agg({'bedrooms': 'max', 'bathrooms': 'min'})
+```
+
+
 This method is also useful when you want to apply your own aggregation function:
 ```
+def list_options(group):
+    return set(group.tolist())
+
+df.groupby('zipcode')['bedrooms'].agg(list_options)
 ```
 
 
