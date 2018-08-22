@@ -184,7 +184,7 @@ print( S.split() )
 `@sct`
 
 ```{python}
-Ex.has_equal_output()
+Ex().has_equal_output()
 ```
 
 
