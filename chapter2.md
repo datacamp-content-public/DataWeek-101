@@ -728,7 +728,7 @@ def predict_house_price(nr_bedrooms, nr_bathrooms):
     ...
 ```
 
-3) Try to add as much data as you can.
+3) Try to add as much data as you can (e.g. size, zipcode, neighborhood).
 
 `@hint`
 The easiest thing you can do is to calculate the average house price for that number of bedrooms.
