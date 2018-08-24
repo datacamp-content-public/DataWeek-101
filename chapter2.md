@@ -631,7 +631,7 @@ df.plot(kind="box", y=["bedrooms", "bathrooms"])
 Plot the average house price by number of bedrooms as a line plot.
 
 `@hint`
-
+The average is already in `avg`.
 
 `@pre_exercise_code`
 
