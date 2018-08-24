@@ -647,7 +647,7 @@ plt.show()
 df.plot(kind="hist", y="bedrooms")
 plt.show()
 
-df.plot(x="bedrooms", y="bathrooms", kind="density")
+df.plot(x="bedrooms", y="bathrooms", kind="kde")
 plt.show()
 ```
 
