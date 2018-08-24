@@ -712,8 +712,6 @@ by_bedroom["error"] = by_bedroom["error"].fillna(max_error)
 by_bedroom.plot(kind="bar", yerr="error", y="mean price", use_index=True)
 plt.set_ylim([0,1e7])
 plt.show()
-
-
 ```
 
 
@@ -735,4 +733,5 @@ plt.show()
 
 
 `@feedback`
+
 
