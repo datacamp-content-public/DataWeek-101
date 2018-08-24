@@ -628,7 +628,7 @@ df.plot(kind="box", y=["bedrooms", "bathrooms"])
 
 
 `@instructions`
-
+Plot the average house price by number of bedrooms as a line plot.
 
 `@hint`
 
@@ -653,20 +653,35 @@ plt.show()
 avg = df.groupby("bedrooms").mean()
 avg.plot(y="bathrooms", use_index=True)
 plt.show()
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
 ```
 
 
 `@solution`
 
 ```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
+df.plot(x="bedrooms", y="bathrooms", kind="scatter")
+plt.show()
+
+avg = df.groupby("bedrooms").mean()
+avg.plot(y="bathrooms", use_index=True)
+plt.show()
+
+#~~~~~~~~~~~~~~~~~~ Add your code below ~~~~~~~~~~~~~~~~~~
+avg.plot(y="lastsoldprice", use_index=True)
+plt.show()
 ```
 
 
 `@sct`
 
 ```{python}
-
+Ex().check_output()
 ```
 
 
