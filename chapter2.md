@@ -681,7 +681,7 @@ plt.show()
 `@sct`
 
 ```{python}
-Ex().check_output()
+1
 ```
 
 
