@@ -609,10 +609,21 @@ You can specify which columns to use and which type of plot
 ```
 df.plot(x="bedrooms", y="bathrooms", kind="scatter")
 ```
-The available plot types include: scatter, box, area, histogram, bar and more.
+The available plot types include: line (default), scatter, box, area, histogram, bar and more.
+Note: after a groupby+aggregation the group columns becomes the index of the new dataframe; you can use `use_index=True` to use the index as `x` variable.
+```
+avg = df.groupby("bedrooms").mean()
+# now bedrooms is the index
+avg.plot(y="bathrooms", use_index=True)
+```
+
 In some cases, when only one variable needs to be specified, this might be the `y` variable, e.g. with histograms:
 ```
 df.plot(kind="hist", y="bedrooms")
+```
+or box plots
+```
+df.plot(kind="box", y=["bedrooms", "bathrooms"])
 ```
 
 
@@ -636,16 +647,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
-#df.plot(x="bedrooms", y="bathrooms", kind="scatter")
-#plt.show()
+df.plot(x="bedrooms", y="bathrooms", kind="scatter")
+plt.show()
 
-#df.groupby('bedrooms').mean().plot(use_inde=True, y="lastsoldprice", kind="bar")
-#plt.show()
-
-#df.plot(kind="hist", y="bedrooms")
-#plt.show()
-
-df.plot(x="bedrooms", y="bathrooms", kind="kde")
+avg = df.groupby("bedrooms").mean()
+avg.plot(y="bathrooms", use_index=True)
 plt.show()
 ```
 
