@@ -615,6 +615,8 @@ In some cases, when only one variable needs to be specified, this might be the `
 df.plot(kind="hist", y="bedrooms")
 ```
 
+df.plot(x="bedrooms", y="bathrooms", kind="density")
+
 
 `@instructions`
 
@@ -643,6 +645,9 @@ plt.show()
 #plt.show()
 
 df.plot(kind="hist", y="bedrooms")
+plt.show()
+
+df.plot(x="bedrooms", y="bathrooms", kind="density")
 plt.show()
 ```
 
