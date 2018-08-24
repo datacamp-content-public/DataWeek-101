@@ -693,7 +693,7 @@ plt.show()
 
 ---
 
-## Insert exercise title here
+## Practice /2
 
 ```yaml
 type: NormalExercise 
@@ -702,14 +702,36 @@ key: 4de5f8a98f
 ```
 
 
+Your friend Robert recently bought a new house in San Francisco (CA) and invites you to his house-warming party. The invite reads:
+"Join me at 8pm, 1080 Chestnut St.".
 
+You get there early and Robert gives you a quick tour of the house which has 2 bedrooms, 2 bathrooms and a total 1622 sqft.
+
+You wonder how much Robert payed for this house ...
 
 
 `@instructions`
+Write a function that predicts the house price.
+You might want to start with something simple as:
 
+1) Write a function that given the number of bedrooms returns the most likely house price.
+For example:
+```
+def predict_house_price(nr_bedrooms):
+    ...
+
+predict_house_price(4) # returns 800k dollars
+```
+2) Write a function that given number of bedrooms *and bathrooms* returns the most likely house price.
+```
+def predict_house_price(nr_bedrooms, nr_bathrooms):
+    ...
+```
+
+3) Try to add as much data as you can.
 
 `@hint`
-
+The easiest thing you can do is to calculate the average house price for that number of bedrooms.
 
 `@pre_exercise_code`
 
@@ -725,17 +747,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
 
-bedrooms_price = df[["bedrooms", "lastsoldprice"]]
-by_bedroom = bedrooms_price.groupby("bedrooms").agg(["mean", "std"])
-by_bedroom.columns = ["mean price", "error"]
-max_error = by_bedroom.error.max()
-by_bedroom["error"] = by_bedroom["error"].fillna(max_error)
-#df.groupby('bedrooms').mean().plot(use_index=True, y="lastsoldprice", kind="bar")
 
-
-by_bedroom.plot(kind="bar", yerr="error", y="mean price", use_index=True)
-plt.set_ylim([0,1e7])
-plt.show()
 ```
 
 
