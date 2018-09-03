@@ -746,8 +746,6 @@ The easiest thing you can do is to calculate the average house price for that nu
 import matplotlib.pyplot as plt
 import pandas as pd
 df = pd.read_csv("https://assets.datacamp.com/production/repositories/3325/datasets/bc5e33e37667626e6720dfc83f635cce7bdae066/house_data_small.csv")
-
-
 ```
 
 
